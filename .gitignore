@@ -13,6 +13,6 @@ Thumbs.db
 /wp-content/*
 !/wp-content/themes
 /wp-content/themes/*
-!/wp-content/themes/seeding_theme
 !/wp-content/themes/daily_up_theme
+!/wp-content/themes/seeding_theme
 /wp-includes/*
