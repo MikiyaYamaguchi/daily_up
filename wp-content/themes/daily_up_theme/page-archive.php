@@ -4,16 +4,28 @@
     <div class="main-column">
       <ul class="bread-wrap">
         <a href="<?php bloginfo('url'); ?>">HOME</a>&nbsp;>&nbsp;
-        <?php $cat = get_the_category();
-        echo get_category_parents($cat[0], true, '&nbsp;'); ?>
+        <?php single_post_title(); ?>
       </ul>
+      <h1>New Post<span>新着情報</span></h1>
       <section>
         <div class="row archive-list">
-          <?php if (have_posts()) : ?>
-            <?php while (have_posts()) : the_post(); ?>
+          <?php
+          $args = array(
+            'posts_per_page' => 10,
+            'paged' => $paged,
+            'orderby' => 'post_date',
+            'order' => 'DESC',
+            'post_type' => 'post',
+            'post_status' => 'publish'
+          );
+          $the_query = new WP_Query($args);
+          $ads_infeed = '4';
+          $ads_infeed_count = '1';
+          if ($the_query->have_posts()) :
+            while ($the_query->have_posts()) : $the_query->the_post();
+          ?>
               <article class="article-item col span-12">
                 <a href="<?php echo the_permalink(); ?>">
-                  <time class="date text-right"><?php the_time('Y.n.j'); ?></time>
                   <figure>
                     <?php the_post_thumbnail(); ?>
                     <figcaption><?php echo the_category(); ?></figcaption>
@@ -30,15 +42,19 @@
                       ?>
                     </h2>
                     <p><?php echo get_the_excerpt(); ?></p>
+                    <time class="date text-right"><?php the_time('Y.n.j'); ?></time>
                   </div>
                 </a>
               </article>
-            <?php endwhile; ?>
-          <?php else : ?>
-            <!--投稿が見つからない-->
+            <?php
+            endwhile; // ループの終了
+          else :
+            ?>
             <p>記事がありません。</p>
-            <!--//投稿が見つからない-->
-          <?php endif; ?>
+          <?php
+          endif;
+          wp_reset_postdata(); // 直前のクエリを復元する
+          ?>
         </div>
       </section>
     </div>

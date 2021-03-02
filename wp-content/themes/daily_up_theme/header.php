@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap" rel="stylesheet">
   <title></title>
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
@@ -27,13 +28,13 @@
         </div>
         <div class="header-nav">
           <?php
-      wp_nav_menu( array(
-        'theme_location' => 'global',
-        'container'      => 'div',
-        'depth'          => 1,
-        'menu_class'     => 'global_nav',
-      ) );
-    ?>
+          wp_nav_menu(array(
+            'theme_location' => 'global',
+            'container'      => 'div',
+            'depth'          => 1,
+            'menu_class'     => 'global_nav',
+          ));
+          ?>
         </div>
       </div>
     </div>

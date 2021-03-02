@@ -1,6 +1,108 @@
 @charset "utf-8";
 
 /*-------------------------------
+basic
+-------------------------------*/
+
+body {
+  font-size: 14px;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
+    sans-serif;
+  background: #fff;
+}
+
+/*-------------------------------
+font
+-------------------------------*/
+
+p {
+  font-size: 14px;
+}
+p a {
+  text-decoration: underline;
+}
+p a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.7em;
+}
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.text-small {
+  font-size: 12px;
+}
+.text-normal {
+  font-size: 14px;
+}
+.text-mideum {
+  font-size: 18px;
+}
+.text-large {
+  font-size: 20px;
+}
+.text-xlarge {
+  font-size: 26px;
+}
+.text-xxlarge {
+  font-size: 30px;
+}
+.text-red {
+  color: #f00 !important;
+}
+.text-blue {
+  color: #00f !important;
+}
+.text-yellow {
+  color: #ff0 !important;
+}
+.text-black {
+  color: #000 !important;
+}
+.text-white {
+  color: #fff !important;
+}
+.text-bold {
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .text-small {
+    font-size: 12px;
+  }
+  .text-normal {
+    font-size: 14px;
+  }
+  .text-mideum {
+    font-size: 16px;
+  }
+  .text-large {
+    font-size: 18px;
+  }
+  .text-xlarge {
+    font-size: 22px;
+  }
+  .text-xxlarge {
+    font-size: 24px;
+  }
+}
+
+/*-------------------------------
 layout
 -------------------------------*/
 
@@ -58,29 +160,29 @@ section {
   margin-left: 0;
 }
 .flex-column {
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .flex-column.content-space-between {
   -webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .flex-column.content-center {
   -webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .flex-column.content-start {
   -webkit-box-pack: start;
-	-ms-flex-pack: start;
-	justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 .flex-column.content-end {
   -webkit-box-pack: end;
-	-ms-flex-pack: end;
-	justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 .flex-column.content-wrap {
   -ms-flex-wrap: wrap;
@@ -100,8 +202,20 @@ section {
 }
 .flex-column.content-align-center {
   -webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+main > .container {
+  overflow: hidden;
+}
+.main-column {
+  float: left;
+  width: 70%;
+}
+.sub-column {
+  float: left;
+  width: 28%;
+  margin-left: 2%;
 }
 
 @media screen and (max-width: 767px) {
@@ -154,5 +268,5 @@ section {
 }
 
 /*-------------------------------
-layout
+button
 -------------------------------*/

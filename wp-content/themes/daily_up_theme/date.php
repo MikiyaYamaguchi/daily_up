@@ -1,19 +1,19 @@
 <?php get_header(); ?>
+
 <main>
   <div class="container">
     <div class="main-column">
-      <ul class="bread-wrap">
+      <ul class="bread-wrap row">
         <a href="<?php bloginfo('url'); ?>">HOME</a>&nbsp;>&nbsp;
-        <?php $cat = get_the_category();
-        echo get_category_parents($cat[0], true, '&nbsp;'); ?>
+        <?php echo get_the_date('Y年n月'); ?>
       </ul>
-      <section>
+      <h1><?php echo get_the_date('Y年n月'); ?>の記事</h1>
+      <div class="row">
         <div class="row archive-list">
           <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
               <article class="article-item col span-12">
                 <a href="<?php echo the_permalink(); ?>">
-                  <time class="date text-right"><?php the_time('Y.n.j'); ?></time>
                   <figure>
                     <?php the_post_thumbnail(); ?>
                     <figcaption><?php echo the_category(); ?></figcaption>
@@ -30,19 +30,20 @@
                       ?>
                     </h2>
                     <p><?php echo get_the_excerpt(); ?></p>
+                    <time class="date text-right"><?php the_time('Y.n.j'); ?></time>
                   </div>
                 </a>
               </article>
+
             <?php endwhile; ?>
           <?php else : ?>
-            <!--投稿が見つからない-->
-            <p>記事がありません。</p>
-            <!--//投稿が見つからない-->
+            <p>記事が見つかりませんでした。</p>
           <?php endif; ?>
         </div>
-      </section>
+      </div>
     </div>
     <?php get_sidebar(); ?>
-  </div>
+    </section>
 </main>
+
 <?php get_footer(); ?>
