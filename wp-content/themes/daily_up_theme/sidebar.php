@@ -1,37 +1,41 @@
 <div class="side-column">
   <div class="row">
     <p class="side-title">Category</p>
-    <?php
-    wp_list_categories(array(
-      'title_li' => '',  //デフォルトで出力されるタイトルを非表示
-      'show_count' => 1 //各カテゴリーに投稿数を表示する
-    ));
-    ?>
+    <div class="row">
+      <?php
+      wp_list_categories(array(
+        'title_li' => '',  //デフォルトで出力されるタイトルを非表示
+        'show_count' => 1 //各カテゴリーに投稿数を表示する
+      ));
+      ?>
+    </div>
   </div>
   <div class="row">
     <p class="side-title">Tag</p>
-    <?php
-    $args = array(
-      'orderby' => 'count',
-      'order' => 'DESC',
-      'number' => '20'
-    );
-    $posttags = get_tags($args);
-    ?>
-    <ul class="side-tag-list">
+    <div class="row">
       <?php
-      if (!empty($posttags)) :
-        foreach ($posttags as $tag) : ?>
-          <li>
-            <a href='<?php echo get_tag_link($tag->term_id); ?>'><?php echo $tag->name ?></a>
-          </li>
+      $args = array(
+        'orderby' => 'count',
+        'order' => 'DESC',
+        'number' => '20'
+      );
+      $posttags = get_tags($args);
+      ?>
+      <ul class="side-tag-list">
         <?php
-        endforeach;
-      else :
-        ?>
-        <p>タグなし</p>
-      <?php endif; ?>
-    </ul>
+        if (!empty($posttags)) :
+          foreach ($posttags as $tag) : ?>
+            <li>
+              <a href='<?php echo get_tag_link($tag->term_id); ?>'><?php echo $tag->name ?></a>
+            </li>
+          <?php
+          endforeach;
+        else :
+          ?>
+          <p>タグなし</p>
+        <?php endif; ?>
+      </ul>
+    </div>
   </div>
   <div class="row">
     <p class="side-title">Archive</p>

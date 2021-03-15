@@ -72,7 +72,7 @@ h4 {
 .text-yellow {
   color: #ff0 !important;
 }
-.text-black {
+.text-2 {
   color: #000 !important;
 }
 .text-white {
@@ -89,6 +89,18 @@ h4 {
 }
 .text-right {
   text-align: right;
+}
+.text-marker-yellow {
+  background: linear-gradient(transparent 0%, #ff0 0%);
+  font-weight: bold;
+}
+.text-marker-red {
+  background: linear-gradient(transparent 0%, #f00 0%);
+  font-weight: bold;
+}
+.text-marker-blue {
+  background: linear-gradient(transparent 0%, #00f 0%);
+  font-weight: bold;
 }
 @media screen and (max-width: 767px) {
   .text-small {
