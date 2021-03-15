@@ -58,7 +58,7 @@
         foreach ($posts as $post) : // ループの開始
           setup_postdata($post); // 記事データの取得 
       ?>
-          <article class="archive-item col span-4">
+          <article class="archive-item col span-12">
             <a href="<?php echo the_permalink(); ?>">
               <figure>
                 <?php the_post_thumbnail(); ?>

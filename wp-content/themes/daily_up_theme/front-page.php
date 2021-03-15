@@ -8,12 +8,12 @@
           <div class="row archive-list">
             <?php
             $args = array(
-              'posts_per_page' => 3 // 表示件数の指定
+              'posts_per_page' => 3
             );
             $posts = get_posts($args);
             if (!empty($posts)) :
-              foreach ($posts as $post) : // ループの開始
-                setup_postdata($post); // 記事データの取得
+              foreach ($posts as $post) :
+                setup_postdata($post);
                 $title = get_the_title(); ?>
                 <article class="article-item col span-4">
                   <a href="<?php echo the_permalink(); ?>">
@@ -38,13 +38,13 @@
                   </a>
                 </article>
               <?php
-              endforeach; // ループの終了
+              endforeach;
             else :
               ?>
               <p>記事がありません。</p>
             <?php
             endif;
-            wp_reset_postdata(); // 直前のクエリを復元する
+            wp_reset_postdata();
             ?>
           </div>
           <div class="row">
@@ -57,7 +57,7 @@
       <section>
         <div class="row">
           <?php
-          $categories = get_categories(array('parent' => 0)); //最上位のカテゴリーのみを取得する
+          $categories = get_categories(array('parent' => 0));
           foreach ($categories as $category) :
           ?>
             <section>

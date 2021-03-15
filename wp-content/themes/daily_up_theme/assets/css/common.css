@@ -81,6 +81,15 @@ h4 {
 .text-bold {
   font-weight: bold;
 }
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
 @media screen and (max-width: 767px) {
   .text-small {
     font-size: 12px;
@@ -128,15 +137,12 @@ section {
 .row .col.span-2 {
   width: 15%;
 }
-
 .row .col.span-3 {
   width: 23.5%;
 }
-
 .row .col.span-4 {
   width: 32%;
 }
-
 .row .col.span-5 {
   width: 40.5%;
 }
@@ -212,12 +218,16 @@ main > .container {
   float: left;
   width: 70%;
 }
-.sub-column {
+.side-column {
   float: left;
   width: 28%;
   margin-left: 2%;
 }
-
+.side-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4%;
+}
 @media screen and (max-width: 767px) {
   section {
     margin-bottom: 7%;
@@ -264,6 +274,14 @@ main > .container {
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+  }
+  .main-column {
+    width: 100%;
+    float: none;
+  }
+  .side-column {
+    width: 100%;
+    float: none;
   }
 }
 
