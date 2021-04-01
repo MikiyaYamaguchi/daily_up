@@ -232,17 +232,20 @@ main > .container {
 }
 .side-column {
   float: left;
-  width: 28%;
+  width: 25%;
   margin-left: 2%;
 }
 .side-title {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   margin-bottom: 4%;
 }
 @media screen and (max-width: 767px) {
   section {
     margin-bottom: 7%;
+  }
+  main > .container {
+    padding: 0 10px;
   }
   .row {
     margin-bottom: 5%;
@@ -294,6 +297,7 @@ main > .container {
   .side-column {
     width: 100%;
     float: none;
+    margin: 0;
   }
 }
 

@@ -6,6 +6,94 @@ header
 @media screen and (max-width: 767px) {
 }
 /*-------------------------------
+search
+-------------------------------*/
+@media screen and (max-width: 767px) {
+}
+/*-------------------------------
+sidebar
+-------------------------------*/
+.side-column {
+  border: 1px solid #000;
+  border-radius: 15px;
+  background: #fff;
+  padding: 4% 2%;
+  box-sizing: border-box;
+}
+.side-column > .row {
+  margin-bottom: 20%;
+}
+.side-title {
+  color: #fff;
+  background: #000;
+  padding: 0.5em 1.5em;
+  border-radius: 6px;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 1.5em;
+}
+.side-column ul li {
+  margin-bottom: 15px;
+}
+.side-column p.more-text {
+  text-align: right;
+}
+.side-column p.more-text a {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+}
+.side-column p.more-text a:hover {
+  text-decoration: underline;
+}
+.side-column ul li a {
+  color: #000;
+  text-decoration: none;
+}
+.side-column ul li a:hover {
+  text-decoration: underline;
+}
+.side-column form {
+  position: relative;
+  padding: 2%;
+  width: 90%;
+}
+.side-column form input[type="text"] {
+  background: #fff;
+  -moz-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
+  padding: 5% 2%;
+  border: none;
+  width: 100%;
+  margin-bottom: 5%;
+  border-radius: 8px;
+}
+.side-column form #cat,
+.side-column form #tag {
+  display: none;
+}
+.side-column form input[type="submit"] {
+  text-indent: 300%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  right: 5px;
+  top: 25%;
+  background: url(/daily_up/wp-content/uploads/search.png) no-repeat
+    center/cover;
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+@media screen and (max-width: 767px) {
+  .side-column form input[type="submit"] {
+    width: 20px;
+    height: 20px;
+  }
+}
+/*-------------------------------
 top
 -------------------------------*/
 @media screen and (max-width: 767px) {
