@@ -128,7 +128,7 @@ layout
 -------------------------------*/
 
 .container {
-  max-width: 1200px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 section {
@@ -145,7 +145,6 @@ section {
 .row .col:first-child {
   margin-left: 0;
 }
-
 .row .col.span-2 {
   width: 15%;
 }
@@ -225,15 +224,15 @@ section {
 }
 main > .container {
   overflow: hidden;
+  padding: 0 3%;
 }
 .main-column {
   float: left;
-  width: 70%;
+  width: 75%;
 }
 .side-column {
-  float: left;
+  float: right;
   width: 25%;
-  margin-left: 2%;
 }
 .side-title {
   font-size: 14px;

@@ -19,6 +19,7 @@ sidebar
   background: #fff;
   padding: 4% 2%;
   box-sizing: border-box;
+  max-width: 300px;
 }
 .side-column > .row {
   margin-bottom: 20%;
@@ -87,7 +88,25 @@ sidebar
   height: 15px;
   border: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 900px) {
+  .side-column.fixed_side {
+    position: fixed;
+    top: 5%;
+    left: auto;
+    right: 3%;
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 1265px) and (min-width: 900px) {
+  .side-column {
+    margin-left: 2%;
+    width: 23%;
+  }
+  .side-column.fixed_side {
+    width: 21.5%;
+  }
+}
+@media screen and (max-width: 900px) {
   .side-column form input[type="submit"] {
     width: 20px;
     height: 20px;
