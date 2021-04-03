@@ -113,8 +113,18 @@ sidebar
   }
 }
 /*-------------------------------
-top
+archive list //記事一覧各カード部分
 -------------------------------*/
+.archive-list .article-item {
+}
+.archive-list .article-item figure {
+  margin: 0;
+}
+.archive-list .article-item figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @media screen and (max-width: 767px) {
 }
 /*-------------------------------
