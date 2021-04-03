@@ -270,3 +270,11 @@ function SearchFilter($query)
   return $query;
 }
 add_filter('pre_get_posts', 'SearchFilter');
+
+//svg画像をメディアアップロードにアップできるようにする。
+add_filter('upload_mimes', 'set_mime_types');
+function set_mime_types($mimes)
+{
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
