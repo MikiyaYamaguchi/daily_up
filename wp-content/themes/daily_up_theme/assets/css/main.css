@@ -240,20 +240,22 @@ top
 body.home main > section {
   position: relative;
   padding: 5% 0 7%;
-  border-top: 2px solid #000;
   border-bottom: 2px solid #000;
+  margin: 0 3%;
+}
+body.home main > section:first-child {
+  border-top: 2px solid #000;
+}
+body.home main > section:nth-child(2) {
+  padding: 5% 0;
 }
 body.home .archive-list .google-adsence-area {
   width: 100%;
-  margin-top: 5%;
   text-align: center;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  padding: 5% 0;
 }
 @media screen and (max-width: 767px) {
-  body.home .archive-list .google-adsence-area {
-    margin-top: 10%;
+  body.home main > section {
+    padding: 8% 0 13%;
   }
 }
 /*-------------------------------

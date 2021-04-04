@@ -37,18 +37,39 @@
                 </a>
               </article>
               <?php if ($count === 3) : ?>
-                <div class="google-adsence-area">Googleアドセンスの広告が入ります。</div>
-              <?php endif; ?>
-            <?php
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="list-wrap">
+      <div class="row archive-list tile">
+        <div class="google-adsence-area">Googleアドセンスの広告が入ります。</div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="list-wrap">
+        <div class="row archive-list tile">
+        <?php endif; ?>
+      <?php
               $count++;
             endforeach;
           else :
-            ?>
-            <p>記事がありません。</p>
-          <?php
+      ?>
+      <p>記事がありません。</p>
+    <?php
           endif;
           wp_reset_postdata();
-          ?>
+    ?>
+    <?php
+    if ($count < 3) :
+    ?>
+      <div class="google-adsence-area">Googleアドセンスの広告が入ります。</div>
+    <?php
+    endif;
+    ?>
         </div>
       </div>
     </div>
