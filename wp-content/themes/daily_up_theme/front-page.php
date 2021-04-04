@@ -1,12 +1,7 @@
 <?php get_header(); ?>
 <main>
-<<<<<<< HEAD
-  <div class="container">
-    <section>
-=======
   <section>
     <div class="container">
->>>>>>> feature/#7
       <div class="list-wrap">
         <div class="row archive-list tile">
           <?php
@@ -77,12 +72,7 @@
     ?>
         </div>
       </div>
-<<<<<<< HEAD
-    </section>
-  </div>
-=======
     </div>
   </section>
->>>>>>> feature/#7
 </main>
 <?php get_footer(); ?>
