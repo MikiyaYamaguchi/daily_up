@@ -1,25 +1,31 @@
 <?php get_header(); ?>
 <main>
+<<<<<<< HEAD
   <div class="container">
     <section>
+=======
+  <section>
+    <div class="container">
+>>>>>>> feature/#7
       <div class="list-wrap">
         <div class="row archive-list tile">
           <?php
+          $count = 1;
           $args = array(
-            'posts_per_page' => 3
+            'posts_per_page' => 6
           );
           $posts = get_posts($args);
           if (!empty($posts)) :
             foreach ($posts as $post) :
               setup_postdata($post);
               $title = get_the_title(); ?>
-              <article class="article-item col span-4">
+              <article class="article-item">
                 <a href="<?php echo the_permalink(); ?>">
                   <figure>
                     <?php the_post_thumbnail(); ?>
                     <figcaption><?php echo the_category(); ?></figcaption>
                   </figure>
-                  <div>
+                  <div class="archive-item-info">
                     <h2 class="arcive-title">
                       <?php
                       if (mb_strlen($post->post_title, 'UTF-8') > 20) {
@@ -30,28 +36,53 @@
                       }
                       ?>
                     </h2>
-                    <time class="date text-left"><?php the_time('Y.n.j'); ?></time>
-                    <div class="read pc-only">記事を読む</div>
+                    <time class="archive-item-date text-left"><?php echo get_post_time('Y.n.j(D)'); ?></time>
+                    <div class="archive-item-tags"><?php the_tags('', ''); ?></div>
                   </div>
                 </a>
               </article>
-            <?php
-            endforeach;
-          else :
-            ?>
-            <p>記事がありません。</p>
-          <?php
-          endif;
-          wp_reset_postdata();
-          ?>
-        </div>
-        <div class="row">
-          <div class="more">
-            <a href="/daily_up/archive">MORE</a>
-          </div>
+              <?php if ($count === 3) : ?>
         </div>
       </div>
+    </div>
+  </section>
+  <section>
+    <div class="list-wrap">
+      <div class="row archive-list tile">
+        <div class="google-adsence-area">Googleアドセンスの広告が入ります。</div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="list-wrap">
+        <div class="row archive-list tile">
+        <?php endif; ?>
+      <?php
+              $count++;
+            endforeach;
+          else :
+      ?>
+      <p>記事がありません。</p>
+    <?php
+          endif;
+          wp_reset_postdata();
+    ?>
+    <?php
+    if ($count < 3) :
+    ?>
+      <div class="google-adsence-area">Googleアドセンスの広告が入ります。</div>
+    <?php
+    endif;
+    ?>
+        </div>
+      </div>
+<<<<<<< HEAD
     </section>
   </div>
+=======
+    </div>
+  </section>
+>>>>>>> feature/#7
 </main>
 <?php get_footer(); ?>

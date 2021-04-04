@@ -9,7 +9,7 @@ body {
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
     "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
     sans-serif;
-  background: #fff;
+  background: #fafafa;
 }
 
 /*-------------------------------
@@ -128,7 +128,7 @@ layout
 -------------------------------*/
 
 .container {
-  max-width: 1920px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 section {
@@ -137,6 +137,9 @@ section {
 .row {
   overflow: hidden;
   margin-bottom: 3%;
+}
+.row:last-child {
+  margin-bottom: 0;
 }
 .row .col {
   float: left;
@@ -226,13 +229,19 @@ main > .container {
   overflow: hidden;
   padding: 0 3%;
 }
+body:not(.home) main > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 .main-column {
-  float: left;
   width: 75%;
 }
 .side-column {
-  float: right;
-  width: 25%;
+  width: 23%;
 }
 .side-title {
   font-size: 14px;
@@ -289,13 +298,19 @@ main > .container {
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
+}
+@media screen and (max-width: 799px) {
+  body:not(.home) main > .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
   .main-column {
     width: 100%;
-    float: none;
   }
   .side-column {
     width: 100%;
-    float: none;
     margin: 0;
   }
 }
