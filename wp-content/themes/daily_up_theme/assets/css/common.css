@@ -30,7 +30,7 @@ a:hover img {
   transition: 0.2s;
 }
 h1 {
-  font-size: 30px;
+  font-size: 42px;
   font-weight: bold;
   margin-bottom: 1.5em;
 }
@@ -107,6 +107,24 @@ h4 {
   font-weight: bold;
 }
 @media screen and (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0.7em;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
   .text-small {
     font-size: 12px;
   }
@@ -136,7 +154,7 @@ layout
   margin: 0 auto;
 }
 section {
-  margin-bottom: 5%;
+  margin-bottom: 7%;
 }
 .row {
   overflow: hidden;
@@ -229,7 +247,7 @@ section {
   -ms-flex-align: center;
   align-items: center;
 }
-main > .container {
+body.home main > .container {
   overflow: hidden;
   padding: 0 3%;
 }
@@ -242,7 +260,7 @@ body:not(.home) main > .container {
   justify-content: space-between;
 }
 .main-column {
-  width: 75%;
+  width: 72%;
 }
 .side-column {
   width: 23%;
@@ -254,7 +272,7 @@ body:not(.home) main > .container {
 }
 @media screen and (max-width: 767px) {
   section {
-    margin-bottom: 7%;
+    margin-bottom: 10%;
   }
   main > .container {
     padding: 0 10px;

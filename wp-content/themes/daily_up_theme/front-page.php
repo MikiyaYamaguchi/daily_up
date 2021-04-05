@@ -3,7 +3,7 @@
   <section>
     <div class="container">
       <div class="list-wrap">
-        <div class="row archive-list tile">
+        <div class="row archive-list">
           <?php
           $count = 1;
           $args = array(
