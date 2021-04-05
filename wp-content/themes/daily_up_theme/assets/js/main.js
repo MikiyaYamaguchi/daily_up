@@ -1,7 +1,6 @@
 $(document).ready(function () {
   $(function () {
-    let nowUrl = location.pathname;
-    if (nowUrl !== "/daily_up/") {
+    if (!$("body").hasClass("home")) {
       var target = $(".side-column"); //ここに追尾したい要素名を記載
       var footer = $("footer"); //フッターでストップさせる
       var targetHeight = target.outerHeight(true);
