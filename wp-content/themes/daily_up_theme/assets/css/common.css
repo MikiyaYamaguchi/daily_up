@@ -274,12 +274,14 @@ body:not(.home) main > .container {
   font-weight: bold;
   margin-bottom: 4%;
 }
+@media screen and (max-width: 799px) {
+  main > .container {
+    padding: 0 10px;
+  }
+}
 @media screen and (max-width: 767px) {
   section {
     margin-bottom: 10%;
-  }
-  main > .container {
-    padding: 0 10px;
   }
   .row {
     margin-bottom: 5%;

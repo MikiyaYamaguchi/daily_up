@@ -227,26 +227,29 @@ archive list
 }
 @media screen and (max-width: 799px) and (min-width: 600px) {
   .archive-list .article-item {
-    width: 46%;
+    width: 46% !important;
+  }
+  .archive-list .article-item {
+    margin-right: 5% !important;
   }
   .archive-list .article-item:nth-child(3n) {
-    margin-right: 8%;
+    margin-right: 5% !important;
   }
   .archive-list .article-item:nth-child(2n) {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
   .archive-list .article-item figure {
-    height: 220px;
+    height: 220px !important;
   }
 }
 @media screen and (max-width: 599px) {
   .archive-list .article-item {
-    width: 100%;
-    margin-right: 0;
+    width: 100% !important;
+    margin-right: 0 !important;
     margin-top: calc(10% + 37px);
   }
   .archive-list .article-item figure {
-    height: 220px;
+    height: 220px !important;
   }
 }
 /*-------------------------------
