@@ -22,10 +22,11 @@
         <div class="header-logo">
           <div class="logo">
             <a href="/daily_up/">
-              <img src="/wp-content/uploads/2020/08/logo.png" alt="Daily Up">
+              <img src="wp-content/uploads/daily_white.svg" alt="Daily Up">
             </a>
           </div>
         </div>
+        <p id="copy">IT・WEBの知識を</p>
         <div class="header-nav">
           <?php
           wp_nav_menu(array(
@@ -35,8 +36,13 @@
             'menu_class'     => 'global_nav',
           ));
           ?>
-
           
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="search">
+         <?php get_search_form(); ?>
         </div>
       </div>
     </div>

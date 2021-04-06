@@ -3,8 +3,102 @@
 /*-------------------------------
 header
 -------------------------------*/
+header{
+  background-image: url("../../images/image.jpg");
+  background-size: cover;
+  height:100vh;
+
+}
+.header-logo {
+  margin:auto;
+  text-align:center;
+  padding-top:60px;
+  
+}
+
+.logo a img{
+  width:120px;
+  height:120px;
+  
+}
 
 
+.header-nav{
+  position: absolute;
+  top:15vh;
+  right:10em;
+  color:white;
+  border-left: 1.5px solid white;
+}
+
+.menu-header-container li{
+  padding-left:20px;
+  padding-bottom:35px;
+}
+
+.menu-header-container a{
+  text-decoration: none;
+  font-size:10px;
+  color:white;
+  
+}
+
+.search{
+  margin:auto;
+  text-align:center;
+
+}
+
+
+.search-wrap {
+  display:flex;
+  flex-wrap:wrap;
+  width:40vw;
+  margin:auto;
+  text-align:center;
+}
+
+
+#s{
+  width:100%;
+  margin-bottom:35px;
+  height:4em;
+  border:0px;
+  border-radius:8px;
+}
+
+#cat{
+  width:49%;
+  height:4em;
+  border:0px;
+  border-radius:8px;
+}
+
+#tag{
+  width:49%;
+  margin-left:2%;
+  height:4em;
+  border:0px;
+  border-radius:8px;
+}
+
+#searchsubmit{
+  width:50%;
+  margin-top:35px;
+  margin-left:25%;
+  height:4em;
+  border:0px;
+  border-radius:8px;
+  background-color: orange;
+}
+
+#copy{
+  margin-top:50px;
+  color:orange;
+  font-weight:bold;
+  font-size:12px;
+  margin-right:30%;
+}
 
 @media screen and (max-width: 767px) {
 }
