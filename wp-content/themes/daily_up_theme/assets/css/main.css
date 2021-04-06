@@ -97,7 +97,8 @@ header{
   color:orange;
   font-weight:bold;
   font-size:12px;
-  margin-right:30%;
+  margin-left:30%;
+  
 }
 
 @media screen and (max-width: 767px) {
