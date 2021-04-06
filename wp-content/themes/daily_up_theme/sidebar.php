@@ -7,7 +7,8 @@
           <?php
           wp_list_categories(array(
             'title_li' => '',  //デフォルトで出力されるタイトルを非表示
-            'show_count' => 1 //各カテゴリーに投稿数を表示する
+            'show_count' => 1, //各カテゴリーに投稿数を表示する
+            'number' => '4'
           ));
           ?>
         </ul>
@@ -32,7 +33,7 @@
           if (!empty($posttags)) :
             foreach ($posttags as $tag) : ?>
               <li>
-                <a href='<?php echo get_tag_link($tag->term_id); ?>'><?php echo $tag->name ?></a>
+                <a href='<?php echo get_tag_link($tag->term_id); ?>'>#<?php echo $tag->name ?></a>
               </li>
             <?php
             endforeach;

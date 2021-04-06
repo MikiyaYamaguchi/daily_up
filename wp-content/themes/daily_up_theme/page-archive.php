@@ -8,7 +8,7 @@
         <div class="archive-list">
           <?php
           $args = array(
-            'posts_per_page' => 10,
+            'posts_per_page' => 9,
             'paged' => $paged,
             'orderby' => 'post_date',
             'order' => 'DESC',
@@ -51,6 +51,24 @@
           wp_reset_postdata(); // 直前のクエリを復元する
           ?>
         </div>
+        <?php
+        if ($the_query->max_num_pages > 1) {
+          echo '<nav class="pagination">';
+          echo paginate_links(array(
+            'base' => get_pagenum_link(1) . '%_%',
+            'format' => '/page/%#%/',
+            'current' => max(1, $paged),
+            'total' => $the_query->max_num_pages,
+            'prev_text' => '<',
+            'next_text' => '>',
+            'type'         => 'list',
+            'end_size'     => 3,
+            'mid_size'     => 3
+          ));
+          echo '</nav>';
+        }
+        wp_reset_postdata();
+        ?>
       </section>
     </div>
     <?php get_sidebar(); ?>

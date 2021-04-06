@@ -43,6 +43,7 @@
               <p class="text-center"><?php echo $search_query; ?>に一致する情報は見つかりませんでした。</p>
             <?php endif; ?>
           </div>
+          <?php if (function_exists("the_pagination")) the_pagination(); ?>
         </div>
       </section>
     </div>

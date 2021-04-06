@@ -150,35 +150,25 @@ if ((strpos($ua, 'Android') !== false) && (strpos($ua, 'Mobile') !== false) || (
 }
 add_filter('excerpt_length', 'twpp_change_excerpt_length', 999);
 
-function wp_pagination()
+function the_pagination()
 {
   global $wp_query;
-  $big = 99999999;
-  $page_format = paginate_links(array(
-    'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-    'format' => '?paged=%#%',
-    'current' => max(1, get_query_var('paged')),
-    'total' => $wp_query->max_num_pages,
-    'show_all' => true,
-    'mid_size' => 5,
-    'prev_next'    => True,
-    'prev_text'    => __('&#x25C0;'),
-    'next_text'    => __('&#x25B6;'),
-    'type'  => 'array'
+  $bignum = 999999999;
+  if ($wp_query->max_num_pages <= 1)
+    return;
+  echo '<nav class="pagination">';
+  echo paginate_links(array(
+    'base'         => str_replace($bignum, '%#%', esc_url(get_pagenum_link($bignum))),
+    'format'       => '',
+    'current'      => max(1, get_query_var('paged')),
+    'total'        => $wp_query->max_num_pages,
+    'prev_text' => '<',
+    'next_text' => '>',
+    'type'         => 'list',
+    'end_size'     => 3,
+    'mid_size'     => 3
   ));
-  if (is_array($page_format)) {
-    $paged = (get_query_var('paged') == 0) ? 1 : get_query_var('paged');
-    echo '<div><ul>';
-    foreach ($page_format as $page) {
-      echo "<li>$page</li>";
-    }
-    echo '</ul></div>';
-  } else {
-    echo '<div><ul>';
-    echo "<li><span aria-current=\"page\" class=\"page-numbers current\">1</span></li>";
-    echo '</ul></div>';
-  }
-  wp_reset_query();
+  echo '</nav>';
 }
 
 //目次自動出力

@@ -14,7 +14,7 @@ search
 sidebar
 -------------------------------*/
 .side-column > .side-content-wrap {
-  border: 1px solid #000;
+  border: 1px solid #333;
   border-radius: 15px;
   background: #fff;
   padding: 12% 6%;
@@ -25,7 +25,7 @@ sidebar
 }
 .side-title {
   color: #fff;
-  background: #000;
+  background: #333;
   padding: 0.5em 1.5em;
   border-radius: 6px;
   text-align: center;
@@ -40,18 +40,28 @@ sidebar
 }
 .side-column p.more-text a {
   text-decoration: none;
-  color: #000;
+  color: #333;
   font-size: 12px;
 }
 .side-column p.more-text a:hover {
   text-decoration: underline;
 }
 .side-column ul li a {
-  color: #000;
+  color: #333;
   text-decoration: none;
 }
 .side-column ul li a:hover {
   text-decoration: underline;
+}
+.side-column .side-tag-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.side-column .side-tag-list li {
+  margin-right: 10px;
 }
 .side-column form {
   position: relative;
@@ -122,7 +132,7 @@ archive list
 }
 .archive-list .article-item {
   position: relative;
-  border: 1px solid #000;
+  border: 1px solid #333;
   border-radius: 0 15px 15px 15px;
   box-sizing: border-box;
   width: 30%;
@@ -163,7 +173,7 @@ archive list
   position: absolute;
   top: 0;
   left: -1px;
-  border: 1px solid #000;
+  border: 1px solid #333;
   border-bottom: none;
   border-radius: 15px 15px 0 0;
   font-size: 12px;
@@ -176,7 +186,7 @@ archive list
   font-size: 18px;
 }
 .archive-list .article-item figure figcaption a {
-  color: #000;
+  color: #333;
   text-decoration: none;
 }
 .archive-list .article-item .archive-item-info {
@@ -190,7 +200,7 @@ archive list
 }
 .archive-list .article-item .archive-item-info .archive-item-tags a {
   margin-left: 15px;
-  color: #000;
+  color: #333;
   text-decoration: none;
 }
 .archive-list .article-item .archive-item-info .archive-item-tags a::before {
@@ -245,11 +255,11 @@ top
 body.home main > section {
   position: relative;
   padding: 5% 0 7%;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #333;
   margin: 0 3%;
 }
 body.home main > section:first-child {
-  border-top: 1px solid #000;
+  border-top: 1px solid #333;
 }
 body.home main > section:last-child {
   border-bottom: none;
@@ -297,7 +307,7 @@ other_page
 footer
 -------------------------------*/
 footer {
-  border-top: 1px solid #000;
+  border-top: 1px solid #333;
   padding: 3% 0;
   margin: 5% 3% 0;
 }
@@ -313,7 +323,7 @@ footer .container .ftr-search-wrap {
 }
 footer .container .ftr-content-wrap .menu-footer-container ul li a {
   text-decoration: none;
-  color: #000;
+  color: #333;
 }
 footer .container .ftr-content-wrap .menu-footer-container ul {
   display: -webkit-box;
@@ -343,7 +353,7 @@ footer .container .ftr-content-wrap .copy-light {
     display: flex;
   }
   footer .container .ftr-content-wrap .menu-footer-container {
-    border-left: 1px solid #000;
+    border-left: 1px solid #333;
   }
   footer .container .ftr-content-wrap .menu-footer-container ul {
     -webkit-box-orient: vertical;
@@ -378,5 +388,86 @@ footer .container .ftr-content-wrap .copy-light {
   }
   footer .container .ftr-content-wrap .copy-light {
     text-align: center;
+  }
+}
+/*-------------------------------
+pagenation
+-------------------------------*/
+.pagination {
+  margin-top: 5%;
+}
+
+.pagination .page-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.pagination .page-numbers li {
+  margin-left: 15px;
+}
+
+.pagination .page-numbers li:first-child {
+  margin-left: 0;
+}
+
+.pagination .page-numbers li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination .page-numbers li a:not(.prev):not(.next),
+.pagination .page-numbers li span {
+  background: #fff;
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 3px rgb(0 0 0 / 10%);
+}
+
+.pagination .page-numbers li span {
+  border: 1px solid;
+}
+
+.pagination .page-numbers li a.prev,
+.pagination .page-numbers li a.next {
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .pagination .page-numbers li a:not(.prev):not(.next),
+  .pagination .page-numbers li span {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .pagination .page-numbers li a.prev,
+  .pagination .page-numbers li a.next {
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
   }
 }

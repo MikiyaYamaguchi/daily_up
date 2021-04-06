@@ -39,6 +39,7 @@
 						<!--//投稿が見つからない-->
 					<?php endif; ?>
 				</div>
+				<?php if (function_exists("the_pagination")) the_pagination(); ?>
 			</section>
 		</div>
 		<?php get_sidebar(); ?>
