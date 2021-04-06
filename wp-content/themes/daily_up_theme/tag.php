@@ -2,11 +2,7 @@
 <main>
   <div class="container">
     <div class="main-column">
-      <ul class="bread-wrap row">
-        <a href="<?php bloginfo('url'); ?>">HOME</a>&nbsp;>&nbsp;
-        <?php $cat = get_the_tags();
-        echo single_tag_title(); ?>
-      </ul>
+      <?php include('bread.php'); ?>
       <h1><?php single_tag_title(); ?></h1>
       <section>
         <div class="archive-list">

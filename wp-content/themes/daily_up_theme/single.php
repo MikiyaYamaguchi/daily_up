@@ -2,11 +2,7 @@
 <main>
   <div class="container">
     <div class="main-column">
-      <ul class="bread-wrap">
-        <a href="<?php bloginfo('url'); ?>">HOME</a>&nbsp;>&nbsp;
-        <?php $cat = get_the_category();
-        echo get_category_parents($cat[0], true, '&nbsp;'); ?>
-      </ul>
+      <?php include('bread.php'); ?>
       <section>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="row">

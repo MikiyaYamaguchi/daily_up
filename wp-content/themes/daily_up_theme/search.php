@@ -2,14 +2,10 @@
 <main>
   <?php global $wp_query;
   $total_results = $wp_query->found_posts;
-  $search_query = get_search_query();
   ?>
   <div class="container">
     <div class="main-column">
-      <ul class="bread-wrap row">
-        <a href="<?php bloginfo('url'); ?>">HOME</a>&nbsp;>&nbsp;
-        <?php echo $search_query; ?>
-      </ul>
+      <?php include('bread.php'); ?>
       <h1>"<?php echo $search_query; ?>"検索結果</h1>
       <section>
         <div class="row">

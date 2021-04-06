@@ -305,6 +305,9 @@ footer .container {
   max-width: none;
   padding: 0 3%;
 }
+footer .container .bread-wrap.row {
+  margin-bottom: 1.5em;
+}
 footer .container .ftr-search-wrap {
   width: 50%;
 }
@@ -326,7 +329,7 @@ footer .container .ftr-content-wrap .copy-light {
   font-size: 10px;
 }
 @media screen and (min-width: 768px) {
-  footer .container {
+  footer .container > .ftr-content-inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

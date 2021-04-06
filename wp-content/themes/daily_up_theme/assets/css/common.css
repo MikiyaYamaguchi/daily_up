@@ -149,6 +149,9 @@ h4 {
 layout
 -------------------------------*/
 
+main {
+  min-height: 700px;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -335,6 +338,19 @@ body:not(.home) main > .container {
     width: 100%;
     margin: 0;
   }
+}
+
+/*-------------------------------
+bread list
+-------------------------------*/
+
+.bread-wrap a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.bread-wrap a:hover {
+  text-decoration: underline;
 }
 
 /*-------------------------------

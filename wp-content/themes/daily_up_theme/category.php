@@ -2,11 +2,7 @@
 <main>
 	<div class="container">
 		<div class="main-column">
-			<ul class="bread-wrap row">
-				<a href="<?php bloginfo('url'); ?>">HOME</a>&nbsp;>&nbsp;
-				<?php $cat = get_the_category();
-				echo get_category_parents($cat[0], true, '&nbsp;'); ?>
-			</ul>
+			<?php include('bread.php'); ?>
 			<h1><?php single_cat_title(); ?></h1>
 			<section>
 				<div class="archive-list">

@@ -1,15 +1,15 @@
 $(document).ready(function () {
+  //サイドメニュー追尾処理
   $(function () {
     if (!$("body").hasClass("home")) {
-      var target = $(".side-column"); //ここに追尾したい要素名を記載
-      var footer = $("footer"); //フッターでストップさせる
+      var target = $(".side-column");
+      var footer = $("footer");
       var targetHeight = target.outerHeight(true);
       var targetTop = target.offset().top;
 
       $(window).scroll(function () {
         var scrollTop = $(this).scrollTop();
         if (scrollTop > targetTop) {
-          // 動的にコンテンツが追加されてもいいように、常に計算する
           var footerTop = footer.offset().top;
 
           if (scrollTop + targetHeight > footerTop) {
@@ -24,3 +24,16 @@ $(document).ready(function () {
     }
   });
 });
+
+window.onscroll = function () {
+  //サイドメニューフッターで消える処理
+  var check = window.pageYOffset;
+  var docHeight = $(document).height();
+  var dispHeight = $(window).height();
+
+  if (check > docHeight - dispHeight - 100) {
+    $(".side-column").fadeOut(200);
+  } else {
+    $(".side-column").fadeIn(200);
+  }
+};
