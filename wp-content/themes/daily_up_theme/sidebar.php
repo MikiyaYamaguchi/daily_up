@@ -42,7 +42,7 @@
             <p>タグなし</p>
           <?php endif; ?>
         </ul>
-        <p class="more-text"><a href="/">もっと見る</a></p>
+        <p class="more-text"><a href="/daily_up/tag_list/">もっと見る</a></p>
       </div>
     </div>
     <div class="row">

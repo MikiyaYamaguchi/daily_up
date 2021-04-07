@@ -292,9 +292,77 @@ body.home .archive-list .article-item figure {
   }
 }
 /*-------------------------------
-archive
+tag,category list
 -------------------------------*/
+.main-column section #search form {
+  position: relative;
+  max-width: 600px;
+}
+.main-column section #search {
+  margin: 0 2%;
+}
+.main-column section #search form select {
+  display: none;
+}
+.main-column section #search form .search-wrap {
+  text-align: center;
+}
+.main-column section #search form input[type="text"] {
+  background: #fff;
+  -moz-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 5px 3px rgb(0 0 0 / 10%);
+  -ms-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px 3px rgb(0 0 0 / 10%);
+  padding: 4% 2%;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5%;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.main-column section #search form input[type="submit"] {
+  text-indent: 300%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  right: 3%;
+  top: 25%;
+  background: url(/daily_up/wp-content/uploads/search.png) no-repeat
+    center/cover;
+  width: 28px;
+  height: 28px;
+  border: none;
+}
+.tag-list-wrap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.tag-list-wrap ul li {
+  margin: 0 2% 5%;
+}
+.tag-list-wrap ul li a {
+  display: block;
+  width: 100%;
+  border: none;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+.tag-list-wrap ul li a:hover {
+  text-decoration: underline;
+}
 @media screen and (max-width: 767px) {
+  .main-column section #search form input[type="submit"] {
+    top: 30%;
+    width: 20px;
+    height: 20px;
+  }
 }
 /*-------------------------------
 single

@@ -23,17 +23,18 @@ $(document).ready(function () {
       });
     }
   });
-});
+  if ($(window).width() < 768) {
+    window.onscroll = function () {
+      //サイドメニューフッターで消える処理
+      var check = window.pageYOffset;
+      var docHeight = $(document).height();
+      var dispHeight = $(window).height();
 
-window.onscroll = function () {
-  //サイドメニューフッターで消える処理
-  var check = window.pageYOffset;
-  var docHeight = $(document).height();
-  var dispHeight = $(window).height();
-
-  if (check > docHeight - dispHeight - 100) {
-    $(".side-column").fadeOut(200);
-  } else {
-    $(".side-column").fadeIn(200);
+      if (check > docHeight - dispHeight - 100) {
+        $(".side-column").fadeOut(200);
+      } else {
+        $(".side-column").fadeIn(200);
+      }
+    };
   }
-};
+});
