@@ -25,7 +25,7 @@
             </a>
           </div>
         </div>
-        <p id="copy">IT・WEBの知識を</p>
+        <p class="hdr-copy text-bold">IT・WEBの知識を</p>
         <div class="header-nav">
           <?php
           wp_nav_menu(array(

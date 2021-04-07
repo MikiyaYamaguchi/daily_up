@@ -12,13 +12,13 @@ header{
 .header-logo {
   margin:auto;
   text-align:center;
-  padding-top:60px;
+  padding-top:100px;
   
 }
 
 .logo a img{
-  width:120px;
-  height:120px;
+  width:155px;
+  height:82px;
   
 }
 
@@ -50,16 +50,17 @@ header{
 }
 
 
-.search-wrap {
-  display:flex;
-  flex-wrap:wrap;
-  width:40vw;
-  margin:auto;
-  text-align:center;
+body.home header .search .search-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 635px;
+  margin: auto;
+  text-align: center;
 }
 
 
-#s{
+header .search-wrap input[type="text"]{
   width:100%;
   margin-bottom:35px;
   height:4em;
@@ -67,36 +68,35 @@ header{
   border-radius:8px;
 }
 
-#cat{
+header .search-wrap select[name="cat"]{
   width:49%;
   height:4em;
-  border:0px;
+  border:2px solid #333;
   border-radius:8px;
 }
 
-#tag{
+header .search-wrap select[name="tag"]{
   width:49%;
   margin-left:2%;
   height:4em;
-  border:0px;
+  border:2px solid #333;
   border-radius:8px;
 }
 
-#searchsubmit{
+header .search-wrap input[type="submit"]{
   width:50%;
   margin-top:35px;
   margin-left:25%;
   height:4em;
   border:0px;
   border-radius:8px;
-  background-color: orange;
+  background-color: #f39800;
+  color:#fff;
 }
 
-#copy{
+.hdr-copy {
   margin-top:50px;
-  color:orange;
-  font-weight:bold;
-  font-size:12px;
+  color:#f39800;
   margin-left:30%;
   
 }
