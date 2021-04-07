@@ -9,7 +9,8 @@ body {
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
     "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
     sans-serif;
-  background: #fff;
+  background: #fafafa;
+  color: #333333;
 }
 
 /*-------------------------------
@@ -21,12 +22,17 @@ p {
 }
 p a {
   text-decoration: underline;
+  color: #333;
 }
 p a:hover {
   text-decoration: none;
 }
+a:hover img {
+  opacity: 0.7;
+  transition: 0.2s;
+}
 h1 {
-  font-size: 30px;
+  font-size: 42px;
   font-weight: bold;
   margin-bottom: 1.5em;
 }
@@ -103,6 +109,24 @@ h4 {
   font-weight: bold;
 }
 @media screen and (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0.7em;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
   .text-small {
     font-size: 12px;
   }
@@ -127,16 +151,22 @@ h4 {
 layout
 -------------------------------*/
 
+main {
+  min-height: 700px;
+}
 .container {
-  max-width: 1920px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 section {
-  margin-bottom: 5%;
+  margin-bottom: 7%;
 }
 .row {
   overflow: hidden;
   margin-bottom: 3%;
+}
+.row:last-child {
+  margin-bottom: 0;
 }
 .row .col {
   float: left;
@@ -222,29 +252,37 @@ section {
   -ms-flex-align: center;
   align-items: center;
 }
-main > .container {
+body.home main > .container {
   overflow: hidden;
   padding: 0 3%;
 }
+body:not(.home) main > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 .main-column {
-  float: left;
-  width: 75%;
+  width: 72%;
 }
 .side-column {
-  float: right;
-  width: 25%;
+  width: 23%;
 }
 .side-title {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 4%;
 }
-@media screen and (max-width: 767px) {
-  section {
-    margin-bottom: 7%;
-  }
+@media screen and (max-width: 799px) {
   main > .container {
     padding: 0 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section {
+    margin-bottom: 10%;
   }
   .row {
     margin-bottom: 5%;
@@ -289,17 +327,62 @@ main > .container {
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
+}
+@media screen and (max-width: 799px) {
+  body:not(.home) main > .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
   .main-column {
     width: 100%;
-    float: none;
   }
   .side-column {
     width: 100%;
-    float: none;
     margin: 0;
   }
 }
 
 /*-------------------------------
+bread list
+-------------------------------*/
+.bread-wrap a {
+  text-decoration: none;
+  color: #333333;
+}
+.bread-wrap a:hover {
+  text-decoration: underline;
+}
+/*-------------------------------
 button
 -------------------------------*/
+.more {
+  padding: 10px 0;
+}
+.more a {
+  padding-right: 23px;
+  position: relative;
+}
+.more a:after {
+  content: "→";
+  font-size: 10px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}

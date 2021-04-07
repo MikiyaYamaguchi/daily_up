@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/common.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
   <?php wp_head(); ?>
-  <script data-ad-client="ca-pub-2725422849471150" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
