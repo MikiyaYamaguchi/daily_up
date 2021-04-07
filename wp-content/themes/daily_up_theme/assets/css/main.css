@@ -3,27 +3,37 @@
 /*-------------------------------
 header
 -------------------------------*/
-header{
-  background-image: url("../../images/image.jpg");
+body.home header{
+  background-image: url("/daily_up/wp-content/uploads/image.jpg");
   background-size: cover;
   height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+
 
 }
-.header-logo {
+
+body.home .header-container{
+  max-width: 635px;
+  width:100%;
+}
+
+
+body.home .header-logo {
   margin:auto;
   text-align:center;
-  padding-top:100px;
   
 }
 
-.logo a img{
+body.home .logo a img{
   width:155px;
   height:82px;
   
 }
 
 
-.header-nav{
+body.home .header-nav{
   position: absolute;
   top:15vh;
   right:10em;
@@ -31,73 +41,92 @@ header{
   border-left: 1.5px solid white;
 }
 
-.menu-header-container li{
+body.home .menu-header-container li{
   padding-left:20px;
   padding-bottom:35px;
 }
 
-.menu-header-container a{
+body.home .menu-header-container a{
   text-decoration: none;
   font-size:10px;
   color:white;
   
 }
 
-.search{
-  margin:auto;
-  text-align:center;
-
-}
-
 
 body.home header .search .search-wrap {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  max-width: 635px;
   margin: auto;
-  text-align: center;
+  justify-content: center;
 }
 
 
-header .search-wrap input[type="text"]{
+body.home header .search-wrap input[type="text"]{
   width:100%;
-  margin-bottom:35px;
-  height:4em;
+  height:5em;
   border:0px;
   border-radius:8px;
+  padding:0 4%;
+  margin-bottom:5%;
 }
 
-header .search-wrap select[name="cat"]{
+body.home header .search-wrap select[name="cat"]{
   width:49%;
-  height:4em;
+  height:5em;
   border:2px solid #333;
   border-radius:8px;
+  padding:0 4%;
+  margin-bottom:5%;
 }
 
-header .search-wrap select[name="tag"]{
+body.home header .search-wrap select[name="tag"]{
   width:49%;
   margin-left:2%;
-  height:4em;
+  height:5em;
   border:2px solid #333;
   border-radius:8px;
+  padding:0 4%;
+  margin-bottom: 5%;
 }
 
-header .search-wrap input[type="submit"]{
-  width:50%;
-  margin-top:35px;
-  margin-left:25%;
-  height:4em;
+body.home header .search-wrap input[type="submit"]{
+  width:100%;
+  margin-top:5%;
+  height:5em;
   border:0px;
   border-radius:8px;
   background-color: #f39800;
   color:#fff;
+  padding:0 4%;
+}
+
+body.home header .search-wrap .submit-wrap{
+  max-width:260px;
+  width:100%;
+  position:relative;
+}
+
+body.home header .search-wrap .submit-wrap::before{
+  content:"";
+	display:inline-block;
+	background:url("/daily_up/wp-content/uploads/search_wh.png") no-repeat;
+	background-size:contain;
+  width:30px;
+  height:30px;
+  position:absolute;
+  top:38%;
+
+  left:5%;
+  margin:auto;
 }
 
 .hdr-copy {
   margin-top:50px;
   color:#f39800;
-  margin-left:30%;
+  max-width:635px;
+  margin:auto;
+
   
 }
 

@@ -16,7 +16,7 @@
 
 <body <?php body_class(); ?>>
   <header>
-    <div class="container">
+    <div class="header-container">
       <div class="row">
         <div class="header-logo">
           <div class="logo">
