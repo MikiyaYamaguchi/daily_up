@@ -23,7 +23,7 @@ $(document).ready(function () {
       });
     }
   });
-  if ($(window).width() < 768) {
+  if (!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
     window.onscroll = function () {
       //サイドメニューフッターで消える処理
       var check = window.pageYOffset;

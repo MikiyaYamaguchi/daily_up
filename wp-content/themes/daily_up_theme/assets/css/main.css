@@ -35,15 +35,15 @@ sidebar
 .side-column ul li {
   margin-bottom: 15px;
 }
-.side-column p.more-text {
+.side-column p.more {
   text-align: right;
 }
-.side-column p.more-text a {
+.side-column p.more a {
   text-decoration: none;
   color: #333;
   font-size: 12px;
 }
-.side-column p.more-text a:hover {
+.side-column p.more a:hover {
   text-decoration: underline;
 }
 .side-column ul li a {
@@ -355,6 +355,17 @@ tag,category list
   font-size: 15px;
 }
 .tag-list-wrap ul li a:hover {
+  text-decoration: underline;
+}
+.category_list_sec .row .more {
+  margin-top: 3%;
+  text-align: right;
+}
+.category_list_sec .row .more a {
+  color: #333;
+  text-decoration: none;
+}
+.category_list_sec .row .more a:hover {
   text-decoration: underline;
 }
 @media screen and (max-width: 767px) {

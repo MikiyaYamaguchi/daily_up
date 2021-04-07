@@ -12,7 +12,7 @@
           ));
           ?>
         </ul>
-        <p class="more-text"><a href="/archive">もっと見る</a></p>
+        <p class="more"><a href="/daily_up/category_list">もっと見る</a></p>
       </div>
     </div>
     <div class="row">
@@ -42,7 +42,7 @@
             <p>タグなし</p>
           <?php endif; ?>
         </ul>
-        <p class="more-text"><a href="/daily_up/tag_list/">もっと見る</a></p>
+        <p class="more"><a href="/daily_up/tag_list/">もっと見る</a></p>
       </div>
     </div>
     <div class="row">
