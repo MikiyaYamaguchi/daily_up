@@ -19,10 +19,14 @@ body.home .header-container{
   width:100%;
 }
 
+body.home .logo{
+  margin: 10%;
+}
 
 body.home .header-logo {
   margin:auto;
   text-align:center;
+
   
 }
 
@@ -48,11 +52,14 @@ body.home .menu-header-container li{
 
 body.home .menu-header-container a{
   text-decoration: none;
-  font-size:10px;
+  font-size:14px;
   color:white;
   
 }
 
+body.home .menu-header-container ul li.sns_btn img {
+  max-width: 40px;
+}
 
 body.home header .search .search-wrap {
   display: flex;
@@ -69,6 +76,10 @@ body.home header .search-wrap input[type="text"]{
   border-radius:8px;
   padding:0 4%;
   margin-bottom:5%;
+  -moz-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+-webkit-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+-ms-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
 }
 
 body.home header .search-wrap select[name="cat"]{
@@ -78,6 +89,10 @@ body.home header .search-wrap select[name="cat"]{
   border-radius:8px;
   padding:0 4%;
   margin-bottom:5%;
+  -moz-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+  -ms-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
 }
 
 body.home header .search-wrap select[name="tag"]{
@@ -88,6 +103,10 @@ body.home header .search-wrap select[name="tag"]{
   border-radius:8px;
   padding:0 4%;
   margin-bottom: 5%;
+  -moz-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+-webkit-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+-ms-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
 }
 
 body.home header .search-wrap input[type="submit"]{
@@ -99,6 +118,10 @@ body.home header .search-wrap input[type="submit"]{
   background-color: #f39800;
   color:#fff;
   padding:0 4%;
+  -moz-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+-webkit-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+-ms-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
 }
 
 body.home header .search-wrap .submit-wrap{
