@@ -19,7 +19,9 @@
 					<?php endforeach; ?>
 				</select>
 			<?php endif; ?>
-			<input type="submit" id="searchsubmit" value="検索" />
+			<div class="submit-wrap">
+				<input type="submit" id="searchsubmit" value="検索" />
+			</div>
 		</div>
 	</form>
 </div>
