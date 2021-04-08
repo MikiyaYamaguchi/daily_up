@@ -101,12 +101,12 @@ sidebar
   .side-column.fixed_side > .side-content-wrap {
     position: fixed;
     padding: 2em 1em;
-    width: 276px;
+    width: 299px;
   }
 }
 @media screen and (max-width: 1265px) and (min-width: 800px) {
   .side-column > .side-content-wrap {
-    right: 2%;
+    right: 1%;
     left: auto;
     max-width: 262px;
   }
@@ -378,6 +378,44 @@ tag,category list
 /*-------------------------------
 single
 -------------------------------*/
+body.single .main-column > section:nth-child(2) {
+  margin-bottom: 0;
+}
+.single-category {
+  margin-bottom: 1.5em;
+  font-size: 18px;
+  font-weight: 500;
+}
+.single-category a {
+  text-decoration: none;
+}
+.single-category a:hover {
+  text-decoration: underline;
+}
+body.single time {
+  display: block;
+  text-align: right;
+  margin-bottom: 2%;
+  font-weight: 500;
+}
+.single-tag-list p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.single-tag-list p a {
+  font-size: 13px;
+  margin: 0 12px 20px 0;
+  text-decoration: none;
+}
+.single-tag-list p a:before {
+  content: "#";
+}
+.single-tag-list p a:hover {
+  text-decoration: underline;
+}
 @media screen and (max-width: 767px) {
 }
 /*-------------------------------
