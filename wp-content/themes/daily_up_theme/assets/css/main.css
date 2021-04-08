@@ -261,6 +261,9 @@ body.home main > section {
   border-bottom: 1px solid #333;
   margin: 0 3%;
 }
+body.home main > section > .container {
+  max-width: 1100px;
+}
 body.home main > section:first-child {
   border-top: 1px solid #333;
 }
@@ -275,8 +278,8 @@ body.home .archive-list .google-adsence-area {
   text-align: center;
 }
 body.home .archive-list .article-item {
-  width: 28%;
-  margin-right: 8%;
+  width: 29%;
+  margin-right: 6%;
 }
 body.home .archive-list .article-item:nth-child(3n) {
   margin-right: 0;
