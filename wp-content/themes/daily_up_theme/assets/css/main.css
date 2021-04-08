@@ -3,158 +3,160 @@
 /*-------------------------------
 header
 -------------------------------*/
-body.home header{
+header {
+  margin-bottom: 4%;
+}
+body.home header {
   background-image: url("/daily_up/wp-content/uploads/image.jpg");
   background-size: cover;
-  height:100vh;
-  display:flex;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  align-items:center;
-
-
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-
-body.home .header-container{
+body.home .header-container {
   max-width: 635px;
-  width:100%;
+  width: 100%;
 }
-
-body.home .logo{
-  margin: 10%;
+body.home .logo {
+  margin-bottom: 10%;
 }
-
 body.home .header-logo {
-  margin:auto;
-  text-align:center;
-
-  
+  margin: auto;
+  text-align: center;
 }
-
-body.home .logo a img{
-  width:155px;
-  height:82px;
-  
+body.home .logo a img {
+  width: 155px;
+  height: 82px;
 }
-
-
-body.home .header-nav{
+body.home .header-nav {
   position: absolute;
-  top:15vh;
-  right:10em;
-  color:white;
+  top: 15%;
+  right: 8%;
+  color: white;
   border-left: 1.5px solid white;
 }
-
-body.home .menu-header-container li{
-  padding-left:20px;
-  padding-bottom:20px;
-  padding-top:20px;
+body.home .header-nav .menu-header-container li {
+  padding-left: 20px;
+  padding-bottom: 2.5em;
 }
-
-body.home .menu-header-container a{
+body.home .header-nav .menu-header-container li:first-child {
+  padding-top: 1.5em;
+}
+body.home .header-nav .menu-header-container li:last-child {
+  padding-bottom: 1.5em;
+}
+body.home .header-nav .menu-header-container a {
   text-decoration: none;
-  font-size:12px;
-  color:white;
-  
+  font-size: 14px;
+  color: white;
 }
-
-body.home .menu-header-container ul li.sns_btn img {
-  max-width: 40px;
+body.home .header-nav .menu-header-container a:hover {
+  text-decoration: underline;
 }
-
+body.home .header-nav .menu-header-container ul li.sns_btn img {
+  max-width: 30px;
+}
+body.home .header-container .row {
+  overflow: visible;
+}
 body.home header .search .search-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
-
-
-body.home header .search-wrap input[type="text"]{
-  width:100%;
-  height:5em;
-  border:0px;
-  border-radius:8px;
-  padding:0 4%;
-  margin-bottom:5%;
+body.home header .search-wrap input[type="text"] {
+  width: 100%;
+  height: 4em;
+  border: 0px;
+  border-radius: 8px;
+  padding: 0 4%;
+  margin-bottom: 5%;
   -moz-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
--webkit-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
--ms-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+  -ms-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+  font-size: 16px;
 }
-
-body.home header .search-wrap select[name="cat"]{
-  width:49%;
-  height:5em;
-  border:2px solid #333;
-  border-radius:8px;
-  padding:0 4%;
-  margin-bottom:5%;
+body.home header .search-wrap select {
+  width: 49%;
+  height: 5em;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 0 4%;
+  margin-bottom: 5%;
   -moz-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
   -webkit-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
   -ms-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
   box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
 }
 
-body.home header .search-wrap select[name="tag"]{
-  width:49%;
-  margin-left:2%;
-  height:5em;
-  border:2px solid #333;
-  border-radius:8px;
-  padding:0 4%;
-  margin-bottom: 5%;
-  -moz-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
--webkit-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
--ms-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+body.home header .search-wrap select[name="tag"] {
+  margin-left: 2%;
 }
 
-body.home header .search-wrap input[type="submit"]{
-  width:100%;
-  margin-top:5%;
-  height:5em;
-  border:0px;
-  border-radius:8px;
+body.home header .search-wrap input[type="submit"] {
+  width: 100%;
+  margin-top: 5%;
+  height: 5em;
+  border: 0px;
+  border-radius: 8px;
   background-color: #f39800;
-  color:#fff;
-  padding:0 4%;
+  color: #fff;
+  padding: 0 4%;
   -moz-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
--webkit-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
--ms-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+  -ms-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-body.home header .search-wrap .submit-wrap{
-  max-width:260px;
-  width:100%;
-  position:relative;
+body.home header .search-wrap input[type="submit"]:hover {
+  background: #d97e00;
 }
 
-body.home header .search-wrap .submit-wrap::before{
-  content:"";
-	display:inline-block;
-	background:url("/daily_up/wp-content/uploads/search_wh.png") no-repeat;
-	background-size:contain;
-  width:30px;
-  height:30px;
-  position:absolute;
-  top:38%;
+body.home header .search-wrap .submit-wrap {
+  max-width: 260px;
+  width: 100%;
+  position: relative;
+}
 
-  left:5%;
-  margin:auto;
+body.home header .search-wrap .submit-wrap::before {
+  content: "";
+  display: inline-block;
+  background: url("/daily_up/wp-content/uploads/search_wh.png") no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 38%;
+  left: 5%;
+  margin: auto;
 }
 
 .hdr-copy {
-  margin-top:50px;
-  color:#f39800;
-  max-width:635px;
-  margin:auto;
-
-  
+  margin-top: 50px;
+  color: #f39800;
+  max-width: 635px;
+  margin: auto;
 }
 
 @media screen and (max-width: 767px) {
+  header {
+    margin-bottom: 8%;
+  }
 }
 /*-------------------------------
 search

@@ -28,22 +28,21 @@
         <p class="hdr-copy text-bold">IT・WEBの知識を</p>
         <div class="header-nav">
           <?php
-             wp_nav_menu(array(
-              'theme_location' => 'global',
-              'container'      => 'div',
-              'depth'          => 1,
-              'menu_class'     => 'global_nav',
-              'menu_class'     => 'global_nav', 
-      'items_wrap'      => '<ul>%3$s<li class="sns_btn"><a href="#" target="_blank"><img src="/daily_up/wp-content/uploads/twitter_icon_wh.png" alt="Twitter"></a></li></ul>'
-            ));
+          wp_nav_menu(array(
+            'theme_location' => 'global',
+            'container'      => 'div',
+            'depth'          => 1,
+            'menu_class'     => 'global_nav',
+            'items_wrap'      => '<ul>%3$s<li class="sns_btn"><a href="#" target="_blank"><img src="/daily_up/wp-content/uploads/twitter_icon_wh.png" alt="Twitter"></a></li></ul>'
+          ));
           ?>
-          
-          
+
+
         </div>
       </div>
       <div class="row">
         <div class="search">
-         <?php get_search_form(); ?>
+          <?php get_search_form(); ?>
         </div>
       </div>
     </div>
