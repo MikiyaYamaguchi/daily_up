@@ -15,35 +15,37 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <header>
-    <div class="header-container">
-      <div class="row">
-        <div class="header-logo">
-          <div class="logo">
-            <a href="/daily_up/">
-              <img src="wp-content/uploads/daily_white.svg" alt="Daily Up">
-            </a>
+  <?php if (is_home() || is_front_page()) : ?>
+    <header>
+      <div class="header-container">
+        <div class="row">
+          <div class="header-logo">
+            <div class="logo">
+              <a href="/daily_up/">
+                <img src="wp-content/uploads/daily_white.svg" alt="Daily Up">
+              </a>
+            </div>
+          </div>
+          <p class="hdr-copy text-bold">IT・WEBの知識を</p>
+          <div class="header-nav">
+            <?php
+            wp_nav_menu(array(
+              'theme_location' => 'global',
+              'container'      => 'div',
+              'depth'          => 1,
+              'menu_class'     => 'global_nav',
+              'items_wrap'      => '<ul>%3$s<li class="sns_btn"><a href="#" target="_blank"><img src="/daily_up/wp-content/uploads/twitter_icon_wh.png" alt="Twitter"></a></li></ul>'
+            ));
+            ?>
           </div>
         </div>
-        <p class="hdr-copy text-bold">IT・WEBの知識を</p>
-        <div class="header-nav">
-          <?php
-          wp_nav_menu(array(
-            'theme_location' => 'global',
-            'container'      => 'div',
-            'depth'          => 1,
-            'menu_class'     => 'global_nav',
-            'items_wrap'      => '<ul>%3$s<li class="sns_btn"><a href="#" target="_blank"><img src="/daily_up/wp-content/uploads/twitter_icon_wh.png" alt="Twitter"></a></li></ul>'
-          ));
-          ?>
-
-
+        <div class="row">
+          <div class="search">
+            <?php get_search_form(); ?>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="search">
-          <?php get_search_form(); ?>
-        </div>
-      </div>
-    </div>
-  </header>
+    </header>
+  <?php else : ?>
+
+  <?php endif; ?>
