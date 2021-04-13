@@ -1,7 +1,14 @@
 <?php get_header(); ?>
+<?php
+$searchTag = $GET_['tag'];
+$searchTagObj = get_term_by('slug', $searchTag, 'post_tag');
+$searchTagStr = $searchTagObj->name;
+$found_cnt = $wp_query->post_count;
+?>
 <main>
   <?php global $wp_query;
   $total_results = $wp_query->found_posts;
+  $search_query = get_search_query();
   ?>
   <div class="container">
     <div class="main-column">
