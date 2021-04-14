@@ -47,7 +47,7 @@ $found_cnt = $wp_query->post_count;
               <?php endwhile;
               endif;
             else : ?>
-              <p class="text-center"><?php echo $search_query; ?>に一致する情報は見つかりませんでした。</p>
+              <p class="text-center"><?php if ($search_query !== "") : ?>"<?php echo $search_query; ?>"に<?php endif; ?>一致する情報は見つかりませんでした。</p>
             <?php endif; ?>
           </div>
           <?php if (function_exists("the_pagination")) the_pagination(); ?>
