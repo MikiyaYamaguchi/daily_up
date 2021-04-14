@@ -13,7 +13,7 @@ $found_cnt = $wp_query->post_count;
   <div class="container">
     <div class="main-column">
       <?php include('bread.php'); ?>
-      <h1>"<?php echo $search_query; ?>"検索結果</h1>
+      <h1><?php if ($search_query !== "") : ?>"<?php echo $search_query; ?>"<?php endif; ?>検索結果</h1>
       <section>
         <div class="row">
           <div class="archive-list">
