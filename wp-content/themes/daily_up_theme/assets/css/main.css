@@ -97,7 +97,7 @@ sidebar
   height: 15px;
   border: none;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   .side-column.fixed_side > .side-content-wrap {
     position: fixed;
     padding: 2em 1em;
@@ -417,6 +417,119 @@ body.single time {
   text-decoration: underline;
 }
 @media screen and (max-width: 767px) {
+}
+body.single .side-column .side-content-wrap .row:first-child {
+  padding: 4%;
+}
+body.single .side-column .side-content-wrap .row .side-title {
+  background: transparent;
+  color: #333;
+  padding: 0;
+  margin-bottom: 0.5em;
+}
+body.single .side-column .side-content-wrap .archive-list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+body.single .side-column .side-content-wrap .archive-list .article-item {
+  border: none;
+  width: 100%;
+  border-radius: 0;
+}
+body.single .side-column .side-content-wrap .archive-list .article-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 8% 0;
+  border-bottom: 1px solid #333;
+  transition: 0.2s;
+}
+body.single .side-column .side-content-wrap .archive-list .article-item:hover {
+  background: rgba(220, 220, 220, 0.5);
+}
+body.single
+  .side-column
+  .side-content-wrap
+  .archive-list
+  .article-item:last-child {
+  border-bottom: none;
+}
+body.single .side-column .side-content-wrap .archive-list .article-item > a {
+  width: 50%;
+  height: 100px;
+}
+body.single
+  .side-column
+  .side-content-wrap
+  .archive-list
+  .article-item
+  > .archive-item-info {
+  width: 50%;
+  padding: 0 0 0 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+body.single
+  .side-column
+  .side-content-wrap
+  .archive-list
+  .article-item
+  > .archive-item-info
+  > a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+body.single .side-column .archive-list .article-item figure {
+  height: 100%;
+}
+body.single .side-column .side-content-wrap .archive-list .article-item > a {
+  position: relative;
+}
+body.single
+  .side-column
+  .side-content-wrap
+  .archive-list
+  .article-item
+  .post-categories
+  a {
+  font-size: 12px;
+}
+body.single
+  .side-column
+  .side-content-wrap
+  .archive-list
+  .article-item
+  figure
+  img {
+  border-radius: 0;
+}
+body.single .side-column .side-content-wrap .archive-list .article-item h2 {
+  font-size: 16px;
+  color: #333;
+}
+body.single .side-column .side-content-wrap .archive-list .article-item time {
+  color: #333;
+  font-size: 10px;
+}
+body.single .side-column .side-content-wrap .archive-list .article-item a {
+  text-decoration: none;
 }
 /*-------------------------------
 other_page
