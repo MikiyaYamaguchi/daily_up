@@ -51,6 +51,12 @@
       </div>
       <div class="row">
         <?php get_search_form(); ?>
+        <div class="side-select-wrap">
+          <?php get_categories_dropdown("Category"); ?>
+        </div>
+        <div class="side-select-wrap">
+          <?php get_tags_dropdown("Tag"); ?>
+        </div>
       </div>
     <?php else : ?>
       <div class="row">

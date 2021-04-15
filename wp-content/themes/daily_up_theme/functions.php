@@ -260,3 +260,51 @@ function SearchFilter($query)
   return $query;
 }
 add_filter('pre_get_posts', 'SearchFilter');
+
+//詳細ページサイドメニューカテゴリープルダウン
+function get_categories_dropdown($label = '')
+{
+  $html = '';
+  $categories = get_categories();
+
+  if (!empty($categories)) {
+    $html .= '<select onChange="window.location.href=this.options[this.selectedIndex].value;" class="categories-dropdown">';
+
+    $html .= '<option>' . $label . '</option>';
+    foreach ($categories as $category) {
+      $html .= sprintf(
+        '<option value="%s">%s</option>',
+        get_tag_link($category->term_id),
+        $category->name
+      );
+    }
+
+    $html .= '</select>';
+  }
+
+  echo $html;
+}
+
+//詳細ページサイドメニュータグプルダウン
+function get_tags_dropdown($label = '')
+{
+  $html = '';
+  $tags = get_tags();
+
+  if (!empty($tags)) {
+    $html .= '<select onChange="window.location.href=this.options[this.selectedIndex].value;" class="tags-dropdown">';
+    $html .= '<option>' . $label . '</option>';
+
+    foreach ($tags as $tag) {
+      $html .= sprintf(
+        '<option value="%s">%s</option>',
+        get_tag_link($tag->term_id),
+        $tag->name
+      );
+    }
+
+    $html .= '</select>';
+  }
+
+  echo $html;
+}
