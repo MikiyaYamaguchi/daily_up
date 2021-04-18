@@ -165,14 +165,13 @@ body.home header .search-wrap .submit-wrap::before {
 
   body.home .hamburger{
     display:none;
-    position:fixed;
+    position:absolute;
     top:0;
     right:0;
     left:0;
     bottom:5%;
     z-index: 10;
     width:100%;
-
   }
 
   body.home .header-container {
@@ -184,7 +183,7 @@ body.home header .search-wrap .submit-wrap::before {
   }
 
   body.home .drawer-wrap {
-    position:fixed;
+    position:absolute;
     top:10px;
     right:5px;
     width:80px;
