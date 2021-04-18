@@ -37,4 +37,17 @@ $(document).ready(function () {
       }
     };
   }
+  //ここからヘッダー 
+  $(function(){
+    $(".drawer-wrap").click(function(){
+     $(".drawer-box").toggleClass("close");
+    });
+  });
+  $(function(){
+    $(".drawer-wrap").click(function(){
+     $(".hamburger").fadeToggle(500);
+    });
+  });
+
 });
+

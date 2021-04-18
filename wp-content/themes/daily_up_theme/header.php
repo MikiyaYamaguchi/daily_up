@@ -11,14 +11,25 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/common.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
+
   <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
   <?php if (is_home() || is_front_page()) : ?>
     <header>
+      <div class="hamburger">
+      <?php get_sidebar(); ?>
+      </div>
       <div class="header-container">
         <div class="row">
+          <div class="drawer-wrap">
+            <div class="drawer-box">
+              <span class="bar top"></span>
+              <span class="bar middle"></span>
+              <span class="bar bottom"></span>
+            </div>
+          </div>
           <div class="header-logo">
             <div class="logo">
               <a href="/daily_up/">
@@ -49,3 +60,5 @@
   <?php else : ?>
 
   <?php endif; ?>
+  
+</body>
