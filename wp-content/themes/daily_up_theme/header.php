@@ -18,16 +18,73 @@
 <body <?php body_class(); ?>>
   <?php if (is_home() || is_front_page()) : ?>
     <header>
-      <div class="hamburger">
-      <?php get_sidebar(); ?>
+      <div class="sp-icon">
+        <a href="#"><img src="/daily_up/wp-content/uploads/twitter_icon_bk.png" alt="Twitter"></a>
+      </div>
+      <div class="sp-menu">
+        <div class="sp-menu-column">
+          <div class="sp-menu-content-wrap">
+            <div class="row">
+              <p class="sp-menu-title">Category</p>
+            <div class="row">
+              <ul>
+                <?php
+                wp_list_categories(array(
+                  'title_li' => '',  //デフォルトで出力されるタイトルを非表示
+                  'show_count' => 1, //各カテゴリーに投稿数を表示する
+                  'number' => '4'
+                ));
+                ?>
+              </ul>
+              <p class="more"><a href="/daily_up/category_list">もっと見る</a></p>
+            </div>
+          </div>
+          <div class="row">
+            <p class="sp-menu-title">Tag</p>
+            <div class="row">
+              <ul>
+                <?php
+                $args = array(
+                  'orderby' => 'count',
+                  'order' => 'DESC',
+                  'number' => '20'
+                );
+                $posttags = get_tags($args);
+                ?>
+              </ul>
+              <ul class="sp-menu-tag-list">
+                <?php
+                if (!empty($posttags)) :
+                  foreach ($posttags as $tag) : ?>
+                    <li>
+                      <a href='<?php echo get_tag_link($tag->term_id); ?>'>#<?php echo $tag->name ?></a>
+                    </li>
+                  <?php
+                  endforeach;
+                else :
+                  ?>
+                  <p>タグなし</p>
+                <?php endif; ?>
+              </ul>
+              <p class="more"><a href="/daily_up/tag_list/">もっと見る</a></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row">
+              <?php get_search_form(); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
       </div>
       <div class="header-container">
         <div class="row">
           <div class="drawer-wrap">
             <div class="drawer-box">
-              <span class="bar top"></span>
-              <span class="bar middle"></span>
-              <span class="bar bottom"></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
           <div class="header-logo">
@@ -37,7 +94,6 @@
               </a>
             </div>
           </div>
-          <p class="hdr-copy text-bold">IT・WEBの知識を</p>
           <div class="header-nav">
             <?php
             wp_nav_menu(array(
@@ -51,6 +107,7 @@
           </div>
         </div>
         <div class="row">
+          <p class="hdr-copy text-bold">IT・WEBの知識を</p>
           <div class="search">
             <?php get_search_form(); ?>
           </div>
