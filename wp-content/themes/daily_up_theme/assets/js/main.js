@@ -44,6 +44,12 @@ $(document).ready(function() {
             $(".sp-menu").fadeToggle(500);
         });
     });
+    $(function() {
+        $(".lower-drawer-wrap").click(function() {
+            $(".lower-drawer-box").toggleClass("close");
+            $(".sp-menu").fadeToggle(500);
+        });
+    });
 
 
 });
