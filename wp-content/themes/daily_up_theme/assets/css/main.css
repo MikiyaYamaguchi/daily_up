@@ -326,7 +326,7 @@ lower-layer-header
 -------------------------------*/
 
 body:not(.home) .lower-header-container {
-  height: 45px;
+  height: 65px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,8 +346,8 @@ body:not(.home) .lower-icon {
   right: 3%;
 }
 body:not(.home) .lower-icon img {
-  width: 23px;
-  height: 23px;
+  width: 27px;
+  height: 22px;
 }
 body:not(.home) .sp-menu {
   display: none;
@@ -355,7 +355,8 @@ body:not(.home) .sp-menu {
 
 @media screen and (max-width: 767px) {
   body:not(.home) .lower-icon {
-    display: none;
+    position: absolute;
+    left: 3%;
   }
 }
 /*-------------------------------
