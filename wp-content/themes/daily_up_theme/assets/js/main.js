@@ -42,12 +42,18 @@ $(document).ready(function () {
     $(".drawer-wrap").click(function () {
       $(".drawer-box").toggleClass("close");
       $(".sp-menu").fadeToggle(500);
+      $("body").css("overflow") === "hidden"
+        ? $("body").css("overflow", "visible")
+        : $("body").css("overflow", "hidden");
     });
   });
   $(function () {
     $(".lower-drawer-wrap").click(function () {
       $(".lower-drawer-box").toggleClass("close");
       $(".sp-menu").fadeToggle(500);
+      $("body").css("overflow") === "hidden"
+        ? $("body").css("overflow", "visible")
+        : $("body").css("overflow", "hidden");
     });
   });
   //下層関連記事スライド

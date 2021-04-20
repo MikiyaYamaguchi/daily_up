@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/common.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
+  <link href="<?php echo get_template_directory_uri(); ?>/assets/css/slick-theme.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo get_template_directory_uri(); ?>/assets/css/slick.css" rel="stylesheet" type="text/css">
 
   <?php wp_head(); ?>
 </head>
