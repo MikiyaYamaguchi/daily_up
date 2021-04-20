@@ -71,8 +71,8 @@
                       <time class="date text-left sp-only"><?php the_time('Y.n.j'); ?></time>
                     </div>
                   </a>
-                  </article>
-                <?php endwhile; ?>
+                </li>
+              <?php endwhile; ?>
             </ul>
           <?php else : ?>
             <p>記事がありません。</p>
