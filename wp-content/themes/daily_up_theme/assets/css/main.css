@@ -9,8 +9,8 @@ header {
 }
 
 body.home header {
-  background-image: url("/daily_up/wp-content/uploads/image.jpg");
-  background-size: cover;
+  background: url("/daily_up/wp-content/uploads/image.jpg") no-repeat
+    center/cover;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,9 +183,9 @@ body.home header .header-container .search-wrap .submit-wrap::before {
 }
 
 @media screen and (max-width: 767px) {
-  header {
-    background-image: url("/daily_up/wp-content/uploads/sp-image.jpg");
-    background-position: 50% 50%;
+  body.home header {
+    background: url("/daily_up/wp-content/uploads/sp-image.jpg") no-repeat
+      center/cover;
     margin-bottom: 8%;
   }
 
