@@ -469,7 +469,7 @@ sidebar
 }
 
 .side-column form input[type="submit"],
-body.home header .sp-menu-column form input[type="submit"] {
+header .sp-menu-column form input[type="submit"] {
   text-indent: 300%;
   white-space: nowrap;
   overflow: hidden;
