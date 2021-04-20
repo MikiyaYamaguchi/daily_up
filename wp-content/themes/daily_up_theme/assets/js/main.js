@@ -37,6 +37,20 @@ $(document).ready(function () {
       }
     };
   }
+  //ハンバーガーメニュー
+  $(function () {
+    $(".drawer-wrap").click(function () {
+      $(".drawer-box").toggleClass("close");
+      $(".sp-menu").fadeToggle(500);
+    });
+  });
+  $(function () {
+    $(".lower-drawer-wrap").click(function () {
+      $(".lower-drawer-box").toggleClass("close");
+      $(".sp-menu").fadeToggle(500);
+    });
+  });
+  //下層関連記事スライド
   $(".slider").slick({
     infinite: true,
     slidesToShow: 3,
