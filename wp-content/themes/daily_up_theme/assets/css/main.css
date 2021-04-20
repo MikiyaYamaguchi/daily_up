@@ -104,7 +104,7 @@ body.home header .search .search-wrap {
   justify-content: center;
 }
 
-body.home header .search-wrap input[type="text"] {
+body.home header .header-container .search-wrap input[type="text"] {
   width: 100%;
   height: 4em;
   border: 0px;
@@ -131,11 +131,11 @@ body.home header .search-wrap select {
   box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
 }
 
-body.home header .search-wrap select[name="tag"] {
+body.home header .header-container .search-wrap select[name="tag"] {
   margin-left: 2%;
 }
 
-body.home header .search-wrap input[type="submit"] {
+body.home header .header-container .search-wrap input[type="submit"] {
   width: 100%;
   margin-top: 5%;
   height: 5em;
@@ -152,17 +152,17 @@ body.home header .search-wrap input[type="submit"] {
   transition: 0.2s;
 }
 
-body.home header .search-wrap input[type="submit"]:hover {
+body.home header .header-container .search-wrap input[type="submit"]:hover {
   background: #d97e00;
 }
 
-body.home header .search-wrap .submit-wrap {
+body.home header .header-container .search-wrap .submit-wrap {
   max-width: 260px;
   width: 100%;
   position: relative;
 }
 
-body.home header .search-wrap .submit-wrap::before {
+body.home header .header-container .search-wrap .submit-wrap::before {
   content: "";
   display: inline-block;
   background: url("/daily_up/wp-content/uploads/search_wh.png") no-repeat;
@@ -195,7 +195,7 @@ body.home header .search-wrap .submit-wrap::before {
     top: 20px;
     left: 5%;
     width: 27px;
-    height: 27px;
+    height: 22px;
   }
 
   body.home .sp-menu,
@@ -222,8 +222,8 @@ body.home header .search-wrap .submit-wrap::before {
   body.home .drawer-wrap,
   body:not(.home) .lower-drawer-wrap {
     position: absolute;
-    top: 10px;
-    right: 5px;
+    top: 15px;
+    right: 10px;
     width: 50px;
     height: 28px;
     cursor: pointer;
@@ -284,26 +284,6 @@ body.home header .search-wrap .submit-wrap::before {
     display: none;
   }
 
-  body.home .sp-menu .search-wrap input[type="text"],
-  body:not(.home) .sp-menu .search-wrap input[type="text"] {
-    -moz-box-shadow: 0px 5px 17px -2px rgba(107, 102, 107, 0.74);
-    -webkit-box-shadow: 0px 5px 17px -2px rgba(107, 102, 107, 0.74);
-    -ms-box-shadow: 0px 5px 17px -2px rgba(107, 102, 107, 0.74);
-    box-shadow: 0px 5px 17px -2px rgba(107, 102, 107, 0.74);
-  }
-  body.home header .sp-menu .search-wrap::after {
-    content: "";
-    display: inline-block;
-    background: url("/daily_up/wp-content/uploads/search.png") no-repeat;
-    background-size: contain;
-    width: 24px;
-    height: 30px;
-    position: absolute;
-    top: 29%;
-    right: 3%;
-    margin: auto;
-  }
-
   body.home .sp-menu-column,
   body:not(.home) .sp-menu-column {
     height: 100vh;
@@ -315,13 +295,14 @@ body.home header .search-wrap .submit-wrap::before {
     box-sizing: border-box;
   }
 
-  body.home .header-container .search-wrap input[type="text"] {
+  body.home header .header-container .search-wrap input[type="text"] {
     width: 80%;
-    height: 3em;
+    height: 4em;
+    font-size: 14px;
   }
 
   body.home header .header-container .search-wrap select {
-    width: 39%;
+    width: 43%;
     height: 4em;
   }
 
@@ -329,11 +310,11 @@ body.home header .search-wrap .submit-wrap::before {
     padding: 0 0 5% 5%;
   }
 
-  body.home header .search-wrap input[type="submit"] {
+  body.home header .header-container .search-wrap input[type="submit"] {
     height: 4em;
   }
 
-  body.home header .search-wrap .submit-wrap::before {
+  body.home header .header-container .search-wrap .submit-wrap::before {
     width: 20px;
     height: 20px;
     top: 43%;
@@ -487,7 +468,7 @@ sidebar
 }
 
 .side-column form input[type="submit"],
-.sp-menu-column form input[type="submit"] {
+body.home header .sp-menu-column form input[type="submit"] {
   text-indent: 300%;
   white-space: nowrap;
   overflow: hidden;
