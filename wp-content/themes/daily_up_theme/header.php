@@ -191,8 +191,5 @@
           </div>
         </div>
       </div>
-      </div>
     </header>
   <?php endif; ?>
-
-</body>
