@@ -569,6 +569,13 @@ archive list
   margin-top: calc(5% + 37px);
   box-sizing: border-box;
 }
+.archive-list .article-item:hover figure a {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+.archive-list .article-item:hover figure a:hover img {
+  opacity: 1;
+}
 .archive-list .article-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -579,6 +586,7 @@ archive list
   right: 0;
   bottom: 0;
   margin: auto;
+  text-decoration: none;
 }
 .archive-list .article-item figure {
   margin: 0;
