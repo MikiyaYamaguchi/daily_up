@@ -117,20 +117,25 @@ body.home header .header-container .search-wrap input[type="text"] {
   font-size: 16px;
 }
 
-body.home header .search-wrap select {
+body.home header .search-wrap .select-wrap {
   width: 49%;
+  margin-bottom: 4%;
+}
+
+body.home header .search-wrap select {
+  position: relative;
   height: 5em;
   border: 2px solid #333;
   border-radius: 8px;
   padding: 0 4%;
-  margin-bottom: 5%;
   -moz-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
   -webkit-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
   -ms-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
   box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
+  width: 100%;
 }
 
-body.home header .header-container .search-wrap select[name="tag"] {
+body.home header .header-container .search-wrap .select-wrap:nth-child(3) {
   margin-left: 2%;
 }
 
@@ -300,8 +305,11 @@ body.home header .header-container .search-wrap .submit-wrap::before {
     font-size: 14px;
   }
 
-  body.home header .header-container .search-wrap select {
+  body.home header .header-container .search-wrap .select-wrap {
     width: 43%;
+  }
+
+  body.home header .header-container .search-wrap select {
     height: 4em;
   }
 
@@ -363,7 +371,49 @@ body:not(.home) .sp-menu {
 /*-------------------------------
 search
 -------------------------------*/
+.search-wrap select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.search-wrap .select-wrap {
+  position: relative;
+}
+.search-wrap .select-wrap:after {
+  content: "↓";
+  color: #333;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #333;
+  width: 22px;
+  height: 22px;
+  font-size: 10px;
+  position: absolute;
+  top: 32%;
+  right: 6%;
+  margin: auto;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+footer .search-wrap .select-wrap:after {
+  top: 30%;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+}
 @media screen and (max-width: 767px) {
+  .search-wrap .select-wrap:after {
+    width: 14px !important;
+    height: 14px !important;
+    font-size: 10px !important;
+  }
 }
 /*-------------------------------
 sidebar
@@ -1151,19 +1201,22 @@ footer .ftr-search-wrap .search-wrap input[type="text"] {
   box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
   font-size: 14px;
 }
-footer .ftr-search-wrap .search-wrap select {
+footer .ftr-search-wrap .search-wrap .select-wrap {
   width: 49%;
+  margin-bottom: 4%;
+}
+footer .ftr-search-wrap .search-wrap select {
   height: 4em;
   border: 2px solid #333;
   border-radius: 8px;
   padding: 0 4%;
-  margin-bottom: 4%;
   -moz-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
-footer .ftr-search-wrap .search-wrap select[name="tag"] {
+footer .ftr-search-wrap .search-wrap .select-wrap:nth-child(3) {
   margin-left: 2%;
 }
 footer .ftr-search-wrap .search-wrap .submit-wrap {
