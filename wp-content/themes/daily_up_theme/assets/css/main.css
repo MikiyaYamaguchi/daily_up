@@ -378,7 +378,8 @@ search
 .search-wrap .select-wrap {
   position: relative;
 }
-.search-wrap .select-wrap:after {
+.header-container .search-wrap .select-wrap:after,
+footer .search-wrap .select-wrap:after {
   content: "↓";
   color: #333;
   background: #fff;
