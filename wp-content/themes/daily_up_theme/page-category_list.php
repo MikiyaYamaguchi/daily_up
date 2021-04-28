@@ -17,7 +17,7 @@
 			$categories = get_categories(array('parent' => 0)); //最上位のカテゴリーのみを取得する
 			foreach ($categories as $category) :
 			?>
-				<section class="category_list_sec">
+				<section class="category-list-sec">
 					<div class="row">
 						<h2><?php echo $category->name; ?></h2>
 						<?php

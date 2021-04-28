@@ -852,15 +852,15 @@ tag,category list
 .tag-list-wrap ul li a:hover {
   text-decoration: underline;
 }
-.category_list_sec .row .more {
+.category-list-sec .row .more {
   margin-top: 3%;
   text-align: right;
 }
-.category_list_sec .row .more a {
+.category-list-sec .row .more a {
   color: #333;
   text-decoration: none;
 }
-.category_list_sec .row .more a:hover {
+.category-list-sec .row .more a:hover {
   text-decoration: underline;
 }
 @media screen and (max-width: 767px) {
@@ -1470,5 +1470,26 @@ contact
 @media screen and (max-width: 767px) {
   .contact .col:last-child {
     width: 100%;
+  }
+}
+/*-------------------------------
+profile
+-------------------------------*/
+.profile-image figure {
+  margin: 0 0 5% 0;
+  overflow: hidden;
+  position: relative;
+}
+.profile-image figure img {
+  max-width: 300px;
+}
+.profile-image .profile-name {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 7%;
+}
+@media screen and (max-width: 320px) {
+  .profile-image figure img {
+    max-width: 260px;
   }
 }
