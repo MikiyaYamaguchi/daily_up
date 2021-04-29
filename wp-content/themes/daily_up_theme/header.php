@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/common.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/page.css">
 
   <?php wp_head(); ?>
 </head>

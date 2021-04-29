@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/*詳細ページ*/
+body.single .main-column section:nth-child(3) ol:not(.toc),
+body.single .main-column section:nth-child(3) ul:not(.toc) {
+  padding: 2% 0 2% 5%;
+
+  margin: 3%;
+  background: rgb(243, 240, 240);
+  box-shadow: 0px 0px 5px silver;
+}
+
+body.single .main-column section:nth-child(3) ol:not(.toc) li {
+  list-style: decimal;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  padding: 1.5% 0;
+}
+body.single .main-column section:nth-child(3) ul:not(.toc) li {
+  list-style: disc;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  padding: 1.2% 0;
+}
+body.single .main-column section:nth-child(3) .toc {
+  background-color: rgb(243, 240, 240);
+  border-radius: 3px;
+}
+
+body.single .main-column section:nth-child(3) .toc li {
+  padding: 2% 0;
+}
+body.single .main-column section:nth-child(3) .toc li a {
+  text-decoration: none;
+}
+body.single .main-column section:nth-child(3) .wp-block-table {
+  margin: 3%;
+  -moz-box-shadow: 3px 2px 34px -5px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 3px 2px 34px -5px rgba(0, 0, 0, 0.58);
+  -ms-box-shadow: 3px 2px 34px -5px rgba(0, 0, 0, 0.58);
+  box-shadow: 3px 2px 34px -5px rgba(0, 0, 0, 0.58);
+}
+
+body.single .main-column section:nth-child(3) .wp-block-table tr,
+body.single .main-column section:nth-child(3) .wp-block-table td {
+  border-collapse: collapse;
+  line-height: 1.5em;
+  padding: 1.5%;
+}
+body.single
+  .main-column
+  section:nth-child(3)
+  .wp-block-table
+  tr:nth-child(even) {
+  background-color: rgb(243, 240, 240);
+}
+body.single .main-column section:nth-child(3) .wp-block-quote {
+  padding: 2% 0;
+  border-radius: 5px;
+  background-color: rgb(243, 240, 240);
+}
+body.single .main-column section:nth-child(3) .wp-block-quote p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+body.single .main-column section:nth-child(3) .wp-block-quote cite {
+  padding-left: 2%;
+  font-family: serif;
+}
+body.single .main-column section:nth-child(3) .toc-title {
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid rgb(240, 167, 10);
+}
+body.single .main-column section:nth-child(3) h2:not(.toc-title) {
+  border-left: 4px solid rgb(240, 167, 10);
+  padding: 3%;
+  background-color: rgb(243, 240, 240);
+  margin: 2% 0;
+}
+body.single .main-column section:nth-child(3) h3:not(.toc-title),
+body.single .main-column section:nth-child(3) h4:not(.toc-title) {
+  margin: 2% 0;
+}
