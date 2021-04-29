@@ -21,7 +21,7 @@
   <?php if (is_home() || is_front_page()) : ?>
     <header>
       <div class="sp-icon">
-        <a href="#"><img src="/daily_up/wp-content/uploads/twitter_icon_wh.png" alt="Twitter"></a>
+        <a href="https://twitter.com/DailyUpppp" target="_blank"><img src="/daily_up/wp-content/uploads/twitter_icon_wh.png" alt="Twitter"></a>
       </div>
       <div class="sp-menu">
         <div class="sp-menu-column">
@@ -103,7 +103,7 @@
               'container'      => 'div',
               'depth'          => 1,
               'menu_class'     => 'global_nav',
-              'items_wrap'      => '<ul>%3$s<li class="sns_btn"><a href="#" target="_blank"><img src="/daily_up/wp-content/uploads/twitter_icon_wh.png" alt="Twitter"></a></li></ul>'
+              'items_wrap'      => '<ul>%3$s<li class="sns_btn"><a href="https://twitter.com/DailyUpppp" target="_blank"><img src="/daily_up/wp-content/uploads/twitter_icon_wh.png" alt="Twitter"></a></li></ul>'
             ));
             ?>
           </div>
@@ -125,7 +125,7 @@
           </a>
         </div>
         <div class="lower-icon">
-          <a href="#">
+          <a href="https://twitter.com/DailyUpppp" target="_blank">
             <img src="/daily_up/wp-content/uploads/twitter_icon_bk.png" alt="Twitter">
           </a>
         </div>

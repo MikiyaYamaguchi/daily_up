@@ -15,7 +15,7 @@
           'container'      => 'div',
           'depth'          => 1,
           'menu_class'     => 'footer_nav',
-          'items_wrap'      => '<ul>%3$s<li class="sns_btn"><a href="#" target="_blank"><img src="/daily_up/wp-content/uploads/twitter_icon_bk.png" alt="Twitter"></a></li></ul>',
+          'items_wrap'      => '<ul>%3$s<li class="sns_btn"><a href="https://twitter.com/DailyUpppp" target="_blank"><img src="/daily_up/wp-content/uploads/twitter_icon_bk.png" alt="Twitter"></a></li></ul>',
         ));
         ?>
         <p class="copy-light">Copyright &copy; <?php bloginfo('name'); ?> All Rights Reserved.</p>
