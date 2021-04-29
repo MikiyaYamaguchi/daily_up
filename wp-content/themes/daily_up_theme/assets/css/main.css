@@ -840,6 +840,8 @@ body.single time {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-bottom: 0 !important;
+  line-height: normal !important;
 }
 .single-tag-list p a {
   font-size: 13px;
