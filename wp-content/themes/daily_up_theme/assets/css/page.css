@@ -3,7 +3,7 @@
 /*詳細ページ*/
 body.single .main-column section:nth-child(3) ol:not(.toc),
 body.single .main-column section:nth-child(3) ul:not(.toc) {
-  padding: 2% 0 2% 5%;
+  padding: 2% 0% 2% 5%;
 
   margin: 3%;
   background: rgb(243, 240, 240);
