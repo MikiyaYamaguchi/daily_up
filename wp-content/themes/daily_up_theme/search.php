@@ -25,7 +25,11 @@ $found_cnt = $wp_query->post_count;
                   <article class="article-item">
                     <a href="<?php echo the_permalink(); ?>">
                       <figure>
-                        <?php the_post_thumbnail(); ?>
+                        <?php if (has_post_thumbnail()) : ?>
+                          <?php the_post_thumbnail('full', array('alt' => get_the_title())); ?>
+                        <?php else : ?>
+                          <img src="/daily_up/wp-content/uploads/default_thumbnail.jpg" alt="<?php echo the_title(); ?>">
+                        <?php endif; ?>
                         <figcaption><?php echo the_category(); ?></figcaption>
                       </figure>
                       <div class="archive-item-info">

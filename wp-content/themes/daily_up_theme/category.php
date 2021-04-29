@@ -12,7 +12,11 @@
 								<a href="<?php echo the_permalink(); ?>">
 									　<figure>
 										<a href="<?php echo the_permalink(); ?>">
-											<?php the_post_thumbnail(); ?>
+											<?php if (has_post_thumbnail()) : ?>
+												<?php the_post_thumbnail('full', array('alt' => get_the_title())); ?>
+											<?php else : ?>
+												<img src="/daily_up/wp-content/uploads/default_thumbnail.jpg" alt="<?php echo the_title(); ?>">
+											<?php endif; ?>
 											<figcaption><?php echo the_category(); ?></figcaption>
 										</a>
 									</figure>
