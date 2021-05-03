@@ -75,6 +75,11 @@
     endif;
     ?>
         </div>
+        <div class="row">
+          <div class="col span-12">
+            <p class="more"><a href="/daily_up/archive">もっと見る</a></p>
+          </div>
+        </div>
       </div>
     </div>
   </section>

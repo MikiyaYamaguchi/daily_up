@@ -660,7 +660,7 @@ archive list
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  top: 0;
+  top: -2px;
   left: -1px;
   border: 1px solid #333;
   border-bottom: none;
@@ -781,6 +781,14 @@ body.home .archive-list .article-item figure {
   margin: 0;
   height: 280px;
   position: relative;
+}
+body.home .archive-list + .row {
+  text-align: right;
+}
+@media screen and (max-width: 1200px) {
+  body.home .archive-list + .row {
+    padding: 0 4%;
+  }
 }
 @media screen and (max-width: 767px) {
   body.home main > section {
@@ -1163,6 +1171,17 @@ body.single
   > li
   > .toc {
   padding: 1.5em 0 0 1em;
+}
+body.single
+  .main-column
+  section:nth-child(3)
+  .row
+  .col.span-10
+  > .toc
+  > li
+  > .toc
+  > li:not(:last-child) {
+  margin-bottom: 0.5em;
 }
 body.single
   .main-column

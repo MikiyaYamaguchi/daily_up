@@ -3,7 +3,7 @@
   <div class="container">
     <div class="main-column">
       <?php include('bread.php'); ?>
-      <h1>New Post</h1>
+      <h1><?php the_title(); ?></h1>
       <section>
         <div class="archive-list">
           <?php
