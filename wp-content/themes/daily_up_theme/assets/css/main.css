@@ -1681,19 +1681,19 @@ contact
   margin-bottom: 5%;
 }
 
-.contact .col:last-child {
+.contact .col:nth-child(2) {
   width: 50%;
 }
 
-.contact .col:last-child input[type="text"],
-.contact .col:last-child input[type="email"],
-.contact .col:last-child textarea {
+.contact .col:nth-child(2) input[type="text"],
+.contact .col:nth-child(2) input[type="email"],
+.contact .col:nth-child(2) textarea {
   width: 100%;
   box-sizing: border-box;
 }
 
-.contact .col:last-child input[type="text"],
-.contact .col:last-child input[type="email"] {
+.contact .col:nth-child(2) input[type="text"],
+.contact .col:nth-child(2) input[type="email"] {
   height: 25px;
 }
 
