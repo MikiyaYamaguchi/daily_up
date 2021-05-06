@@ -104,6 +104,8 @@ body.home header .search .search-wrap {
 }
 
 body.home header .header-container .search-wrap input[type="text"] {
+  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   height: 4em;
   border: 0px;
@@ -123,11 +125,14 @@ body.home header .search-wrap .select-wrap {
 }
 
 body.home header .search-wrap select {
+  -webkit-appearance: none;
+  appearance: none;
   position: relative;
   height: 5em;
   border: 2px solid #333;
   border-radius: 8px;
   padding: 0 4%;
+  background: #fff;
   -moz-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
   -webkit-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
   -ms-box-shadow: 7px 13px 28px 0px rgba(0, 0, 0, 0.26);
@@ -140,6 +145,8 @@ body.home header .header-container .search-wrap .select-wrap:nth-child(3) {
 }
 
 body.home header .header-container .search-wrap input[type="submit"] {
+  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   margin-top: 5%;
   height: 5em;
@@ -204,7 +211,7 @@ body.home header .header-container .search-wrap .submit-wrap::before {
 
   body.home .sp-menu,
   body:not(.home) .sp-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -297,6 +304,7 @@ body.home header .header-container .search-wrap .submit-wrap::before {
     background: #fff;
     padding: 12% 6%;
     box-sizing: border-box;
+    overflow: scroll;
   }
 
   body.home header .header-container .search-wrap input[type="text"] {
@@ -325,6 +333,8 @@ body.home header .header-container .search-wrap .submit-wrap::before {
     width: 20px;
     height: 20px;
     top: 43%;
+  }
+  body.home header .search-wrap select {
   }
 }
 
@@ -496,6 +506,8 @@ body:not(.single) .side-column .side-content-wrap > .row {
 
 .side-column form input[type="text"],
 .sp-menu-column form input[type="text"] {
+  -webkit-appearance: none;
+  appearance: none;
   background: #fff;
   -moz-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
@@ -517,14 +529,14 @@ body:not(.single) .side-column .side-content-wrap > .row {
 
 .side-column form input[type="submit"],
 header .sp-menu-column form input[type="submit"] {
-  text-indent: 300%;
+  text-indent: -9999px;
   white-space: nowrap;
-  overflow: hidden;
   position: absolute;
   right: 10px;
   top: 28%;
+  margin: auto;
   background: url(/daily_up/wp-content/uploads/search.png) no-repeat
-    center/cover;
+    center/contain;
   width: 15px;
   height: 15px;
   border: none;
@@ -817,6 +829,8 @@ tag,category list
   text-align: center;
 }
 .main-column section #search form input[type="text"] {
+  -webkit-appearance: none;
+  appearance: none;
   background: #fff;
   -moz-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 2px 2px 5px 3px rgb(0 0 0 / 10%);
@@ -831,14 +845,14 @@ tag,category list
   box-sizing: border-box;
 }
 .main-column section #search form input[type="submit"] {
-  text-indent: 300%;
+  text-indent: -9999px;
   white-space: nowrap;
   overflow: hidden;
   position: absolute;
   right: 3%;
   top: 25%;
   background: url(/daily_up/wp-content/uploads/search.png) no-repeat
-    center/cover;
+    center/contain;
   width: 28px;
   height: 28px;
   border: none;
@@ -1444,6 +1458,8 @@ footer .ftr-search-wrap .search-wrap {
   justify-content: center;
 }
 footer .ftr-search-wrap .search-wrap input[type="text"] {
+  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   height: 4em;
   border: 0px;
@@ -1492,6 +1508,8 @@ footer .ftr-search-wrap .search-wrap .submit-wrap::before {
   margin: auto;
 }
 footer .ftr-search-wrap .search-wrap input[type="submit"] {
+  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   height: 4em;
   border: 0px;
@@ -1561,12 +1579,6 @@ footer .container .ftr-content-wrap .copy-light {
     margin-bottom: 15%;
   }
   footer .ftr-search-wrap .search-wrap input[type="text"] {
-    height: 3em;
-  }
-  footer .ftr-search-wrap .search-wrap select {
-    height: 3em;
-  }
-  footer .ftr-search-wrap .search-wrap input[type="submit"] {
     height: 3em;
   }
   footer .ftr-search-wrap .search-wrap .submit-wrap::before {
