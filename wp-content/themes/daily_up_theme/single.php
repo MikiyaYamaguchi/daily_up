@@ -36,7 +36,7 @@
           </section>
       <?php endwhile;
       endif; ?>
-      <section>
+      <section class="pc-only">
         <div class="relation-list-title">関連記事</div>
         <div class="relation-list-slider">
           <?php

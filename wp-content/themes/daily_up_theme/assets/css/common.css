@@ -22,6 +22,26 @@ figure img {
   height: auto;
 }
 
+.pc-only {
+  display: none;
+}
+
+.sp-only {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .pc-only {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .sp-only {
+    display: block !important;
+  }
+}
+
 /*-------------------------------
 font
 -------------------------------*/
